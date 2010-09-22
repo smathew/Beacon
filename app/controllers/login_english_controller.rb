@@ -1,0 +1,2 @@
+class LoginEnglishController < ApplicationController
+end

@@ -1,0 +1,146 @@
+<div class="innercontent clearfix">
+		<div class="margin">
+		  <h3>Loan Rates</h3>
+		  <p>Rates are based your individual credit score. We obtain a credit report on you from TransUnion Credit Bureau. 
+          Your credit performance is evaluated by a scoring system and a credit score is created for you. The score is based 
+          on the amount of credit you have, how you have paid your credit, and how long you have been in the credit bureau file. 
+          These are just a few of the factors used in determining your credit score. The higher the score you receive the lower 
+          your interest rate will be. If you have any further questions concerning our rates please 
+          <%= mail_to "beaconccu@beaconccu.org", "contact" %> the loan department.</p>
+          
+          <p class="centertext"><%= link_to image_tag("applynowbtn_01.gif", :alt =>""), new_loanapp_path, :rel => "external" %>
+          </p>
+          
+          <table class="rates">
+              <tr>
+                <td>Description</td>
+                <td>Minimum<br />Amount</td>
+                <td>Maximum<br />Term</td>
+                <td>Annual<br />Percentage Rate</td>
+              </tr>
+              
+              <tr>
+                <th colspan="4">Vehicles</th>
+              </tr>
+              
+              <tr>
+                <td rowspan="5">New &amp; Used Vehicles<br />2008 &ndash; 2003 Models
+                  <%= link_to image_tag("applynowbtn_01.gif", :alt =>""), new_loanapp_path, :rel => "external" %></td>
+                <td>up to 100% of <br />Purchase Price</td>
+                <td>24 Mos.</td>
+                <td>as low as 4.50%*</td>
+              </tr>
+              
+              <tr>
+                <td>up to 100% of <br />Purchase Price</td>
+                <td>36 Mos.</td>
+                <td>as low as 4.75%*</td>
+              </tr>
+              
+              <tr>
+                <td>up to 100% of <br />Purchase Price</td>
+                <td>48 Mos.</td>
+                <td>
+                  as low as 5.00%*
+                </td>
+              </tr>
+              
+              <tr>
+                <td>up to 100% of<br />Purchase Price</td>
+                <td>60 Mos.</td>
+                <td>as low as 5.25%*
+                </td>
+              </tr>
+              
+              <tr>
+                <td>Purchase Price<br />xceeding $18,000</td>
+                <td>72 Mos.</td>
+                <td>as low as 5.50%*
+                </td>
+              </tr>
+
+              <tr>
+                <th colspan="4">Boats &amp; Motorcycles</th>
+              </tr>
+              
+              <tr>
+                <td>New &amp; Used Boats<br />&amp; Motorcycles<br />
+                  <%= link_to image_tag("applynowbtn_01.gif", :alt =>""), new_loanapp_path, :rel => "external" %></td>
+                <td>up to 100% of <br />
+                  Purchase Price</td>
+                <td>60 Mos.</td>
+                <td>as low as 7.00%*
+                </td>
+              </tr>
+
+              <tr>
+                <th colspan="4">Personal</th>
+              </tr>
+              
+              <tr>
+                <td>Personal/Signature<br />
+                  <%= link_to image_tag("applynowbtn_01.gif", :alt =>""), new_loanapp_path, :rel => "external" %></td>
+                <td>$10,0000 Max</td>
+                <td>up to 36 Mos.</td>
+                <td>as low as 10.00%*</td>
+              </tr>
+              
+              <tr>
+                <td>Revolving Credit<br />
+                  <a href="loanapp.asp" rel="external">
+                  <img src="images/applynowbtn_01.gif" alt="" /></a></td>
+                <td>$10,0000 Max</td>
+                <td>Open-End</td>
+                <td>as low as 10.00%*</td>
+              </tr>
+              
+              <tr>
+                  <td>Share Secured<br />
+                      <%= link_to image_tag("applynowbtn_01.gif", :alt =>""), new_loanapp_path, :rel => "external" %></td>
+                  <td>100% of Shares</td>
+                  <td>up to 84 Mos.</td>
+                  <td>4.75%*</td>
+              </tr>
+              
+              <tr>
+                <td>Share Certificate Secured<br />
+                  <%= link_to image_tag("applynowbtn_01.gif", :alt =>""), new_loanapp_path, :rel => "external" %></td>
+                <td>100% of Shares</td>
+                <td>&lt; Certificate <br />
+                  Maturity Date</td>
+                <td>1% + BCCU Cert Rate<br />
+                  min. 5.00%
+                   </td>
+              </tr>
+              
+              <tr>
+                <th colspan="4">Real Estate</th>
+              </tr>
+              <tr>
+                <td>1st &amp; 2nd Mortgages</td>
+                <td>up to 95% of<br />appraised value</td>
+                <td>10-15 years</td>
+                <td>as low as 6.75%*<br />*Call Credit Union to apply</td>
+              </tr>
+              
+              <tr>
+                <td>Home Equity<br />
+                  <%= link_to image_tag("applynowbtn_01.gif", :alt =>""), new_loanapp_path, :rel => "external" %></td>
+                <td>up to 95% of<br />appraised value</td>
+                <td>10-15 years</td>
+                <td>as low as 6.25%* 
+                </td>
+              </tr>
+              
+              <tr>
+                <td class="bottom" colspan="4">* = Annual Percentage Rate. Effective
+                    07/01/2009, Prime Rate is 3.75%. Rates are subject to change.
+                    Members must meet credit requirements. Individual rate based
+                    on borrower qualifications. Shorter terms may be applicable
+                    based on credit performance, model year of vehicle and mileage
+                    of vehicle. Some rates listed above are based on loan being
+                    paid via payroll deduction.</td>
+              </tr>
+          </table>
+          
+	    </div>

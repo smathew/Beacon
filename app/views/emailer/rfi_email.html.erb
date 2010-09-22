@@ -1,0 +1,40 @@
+		REQUEST FOR MORE INFORMATION
+
+Date Submitted 	: 	<%= Time.now %>	
+		APPLICANT INFORMATION				
+Name 			: 	<%= @app.name %>	
+Phone			:	<%= @app.phone %>
+Email address	:	<%= @app.email %>
+Address		:	<%= @app.address %>
+City			:	<%= @app.city %>
+State			:	<%= @app.state %>
+Zip			:	<%= @app.zip %>
+
+		SEND MORE INFORMATION ON THE FOLLOWING:
+
+<% if (@app.membership_application == "yes") %>Membership Application<% end %>			
+<% if (@app.family_membership == "yes") %>Family Membership<% end %>
+<% if (@app.savings_account == "yes") %>Savings Account<% end %>
+<% if (@app.sharedraft_ac == "yes") %>Share Draft (Checking) Account<% end %>
+<% if (@app.christmas_clubac == "yes") %>Christmas Club Account<% end %>
+<% if (@app.money_marketac == "yes") %>Money Market Account<% end %>
+<% if (@app.individual_retirement == "yes") %>Individual Retirement Account (IRA)<% end %>
+<% if (@app.irashare_certificates == "yes") %>IRA Share Certificates<% end %>
+<% if (@app.share_certificates == "yes") %>Share Certificates<% end %>
+<% if (@app.audio_response == "yes") %>Audio Response information and PIN Number for activation<% end %>
+<% if (@app.overdraft_loan == "yes") %>Overdraft Loan Information<% end %>
+<% if (@app.personal_loan == "yes") %>Personal Loan Information<% end %>
+<% if (@app.automobile_loan == "yes") %>Automobile Loan Information<% end %>			
+<% if (@app.heloc == "yes") %>Home Equity Line of Credit Loan Information<% end %>
+<% if (@app.mortgage_loan == "yes") %>Mortgage Loan Information and Application<% end %>
+<% if (@app.visa_creditcard == "yes") %>VISA&trade; Credit Cards<% end %>
+<% if (@app.mac_atmcard == "yes") %>MAC&trade; ATM Card<% end %>
+<% if (@app.master_moneydc == "yes") %>MasterMoney&trade; Debit Card<% end %>
+<% if (@app.payroll_deduction == "yes") %>Payroll Deduction<% end %>
+<% if (@app.direct_deposit == "yes") %>Direct Deposit/Net Pay<% end %>
+<% if (@app.money_orders == "yes") %>Money Orders<% end %>
+<% if (@app.travelers_check == "yes") %>Traveler's Checks<% end %>
+<% if (@app.notary_service == "yes") %>Free Notary Service<% end %>
+<% if (@app.entertainment_tickets == "yes") %>Discount Entertainment Tickets<% end %>
+<% if (@app.other_info == "yes") %>Other information<% end %>
+<%= @app.other_questions %>	

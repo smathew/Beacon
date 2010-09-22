@@ -1,0 +1,132 @@
+
+Date Submitted 			: 	<%= Time.now %>	
+--------------- [ LOAN APPLICATION ] -----------------
+Credit Type 				:	<%= @app.credit_type %> 
+Type of Account				:	<%= @app.account_type %> 
+Amount Requested			:  $<%= @app.amount_requested %> 
+Purpose of Loan				:	<%= @app.purpose_of_loan %> 
+Collateral Offered			:	<%= @app.collateral_offered %> 
+Approx Time to Repay		:	<%= @app.time_to_repay %> <%= @app.type_of_repay %> 
+------------- [ PAYMENT PROTECTION ] -----------------
+<% if (@app.payment_protection_disability == "yes") %>Desired Coverage			:	Single Credit Disability<% end %>
+<% if (@app.payment_protection_single == "yes") %>Desired Coverage			:	Single Credit Life<% end %>
+<% if (@app.payment_protection_joint == "yes") %>Desired Coverage			:	Joint Credit Life<% end %>
+
+------------- [ APPLICANT INFORMATION ] ----------------
+U.S. Citizen				:	<%= @app.applicant_citizenship %> 
+Name						:	<%= @app.applicant_name %> 
+Account Number				:	<%= @app.applicant_account_number %>
+Social Security Number		:	<%= @app.applicant_ssn %>
+Mother's Maiden Name		:	<%= @app.applicant_mother_maiden_name %>
+Marital Status				:	<%= @app.applicant_marital_status %>
+License Number				:	<%= @app.applicant_license_number %>
+State						:	<%= @app.applicant_license_state %>
+Date of Birth				:	<%= @app.applicant_birth_date %>
+List ages of dependents		:	<%= @app.applicant_dependents_ages %>
+Home Number					:	<%= @app.applicant_home_phone %>
+<% if !@app.applicant_work_phone.blank? %>
+Work Number					:	<%= @app.applicant_work_phone %><% end %>
+Email Address				:	<%= @app.applicant_email_address %>
+--------------- [ PRESENT ADDRESS ] ------------------
+Current Address				:	<%= @app.applicant_address %> <%= @app.applicant_city %> <%= @app.applicant_state %> <%= @app.applicant_zip %>
+Years lived there			:	<%= @app.years_in_present_address %>
+Ownership Status			:	<%= @app.ownership_of_present_address %>
+<% if !@app.applicant_previous_address.blank? %>
+--------------- [ PREVIOUS ADDRESS ] ------------------
+Previous Address			:	<%= @app.applicant_previous_address %> <%= @app.applicant_previous_city %> <%= @app.applicant_previous_state %> <%= @app.applicant_previous_zip %>
+Years lived there			:	<%= @app.years_in_previous_address %>
+Ownership Status			:	<%= @app.ownership_of_previous_address %>
+<% end %>
+----------- [ EMPLOYMENT/INCOME DETAILS ] -------------
+Employer					:	<%= @app.applicant_employer %>
+<% if !@app.applicant_employer_address.blank? %>
+Address						:	<%= @app.applicant_employer_address %> <%= @app.applicant_employer_city %> <%= @app.applicant_employer_state %> <%= @app.applicant_employer_zip %>
+<% end %>
+Supervisor					:	<%= @app.applicant_employer_supervisor %>
+Title/Grade					:	<%= @app.applicant_current_title %>
+Start Date					:	<%= @app.applicant_employment_start_date %>
+Hours at Work				:	<%= @app.hours_at_work %>
+<% if !@app.type_of_business.blank? %>
+Business, if self employed	:	<%= @app.type_of_business %>
+<% end %>
+Income						:	<%= @app.applicant_income %> <%= @app.applicant_income_type %>  <%= @app.applicant_income_frequency %>  
+------------------ [ OTHER INCOME ] -------------------
+Source						:	<%= @app.applicant_other_income_source %>
+Amount 						:  $<%= @app.applicant_other_income %>	<%= @app.applicant_other_income_frequency %> 
+<% if !@app.applicant_military_duty.blank? %>
+Military duty next year		:	<%= @app.applicant_military_duty %>
+<% end %>
+------------- [ PREVIOUS EMPLOYMENT ] -----------------
+Employer					:	<%= @app.applicant_previous_employer %>
+<% if !@app.applicant_previous_employer_address.blank? %>
+Address						:	<%= @app.applicant_previous_employer_address %> <%= @app.applicant_previous_employer_city %> <%= @app.applicant_previous_employer_state %> <%= @app.applicant_previous_employer_zip %>
+<% end %>
+Start Date					:	<%= @app.applicant_previous_employment_startdate %>
+End Date					:	<%= @app.applicant_previous_employment_enddate %>
+---------------- [ REFERENCE DETAILS ] ----------------
+Name						:	<%= @app.applicant_reference_name %>
+Relationship 				:	<%= @app.applicant_reference_relationship %>
+<% if !@app.applicant_reference_address.blank? %>
+Address						:	<%= @app.applicant_reference_address %> <%= @app.applicant_reference_city %> <%= @app.applicant_reference_state %> <%= @app.applicant_reference_zip %>
+<% end %>
+Home Phone Number			:	<%= @app.applicant_reference_home_phone %>
+-------------- [ DEBTS - WHAT YOU OWE ] ----------------
+Mortgage/Rent 				:	<%= @app.applicant_mortgage_rent %>
+Creditor 					:	<%= @app.applicant_creditor %>
+Interest Rate 				:	<%= @app.applicant_debt_interest_rate %>
+Present Balance 			:	<%= @app.applicant_mortgage_present_balance %>
+Monthly Payment 			:	<%= @app.applicant_mortgage_monthly_payment %>
+<% if !@app.joint_applicant_name.blank? %>
+---------- [ JOINT APPLICANT INFORMATION ] --------------
+	U.S. Citizen				:	<%= @app.joint_applicant_citizenship %> 
+	Name						:	<%= @app.joint_applicant_name %> 
+	Account Number				:	<%= @app.joint_applicant_account_number %>
+	Social Security Number		:	<%= @app.joint_applicant_ssn %>
+	Mother's Maiden Name		:	<%= @app.joint_applicant_mother_maiden_name %>
+	Marital Status				:	<%= @app.joint_applicant_marital_status %>
+	License Number				:	<%= @app.joint_applicant_license_number %>
+	State						:	<%= @app.joint_applicant_license_state %>
+	Date of Birth				:	<%= @app.joint_applicant_birth_date %>
+	List ages of dependents		:	<%= @app.joint_applicant_dependents_ages %>
+	Home Number					:	<%= @app.joint_applicant_home_phone %>
+	Work Number					:	<%= @app.joint_applicant_work_phone %>
+	Email Address				:	<%= @app.joint_applicant_email_address %>
+	--------------- [ PRESENT ADDRESS ] ------------------
+	Current Address				:	<%= @app.joint_applicant_address %> <%= @app.joint_applicant_city %> <%= @app.joint_applicant_state %> <%= @app.joint_applicant_zip %>
+	Years lived there			:	<%= @app.years_in_present_address_for_joint %>
+	Ownership Status			:	<%= @app.ownership_of_present_address_for_joint %>
+	--------------- [ PREVIOUS ADDRESS ] ------------------
+	Previous Address			:	<%= @app.joint_applicant_previous_address %> <%= @app.joint_applicant_previous_city %> <%= @app.joint_applicant_previous_state %> <%= @app.joint_applicant_previous_zip %>
+	Years lived there			:	<%= @app.years_in_previous_address_for_joint %>
+	Ownership Status			:	<%= @app.ownership_of_previous_address_for_joint %>
+	----------- [ EMPLOYMENT/INCOME DETAILS ] -------------
+	Employer					:	<%= @app.joint_applicant_employer %>
+	Address						:	<%= @app.joint_applicant_employer_address %> <%= @app.joint_applicant_employer_city %> <%= @app.joint_applicant_employer_state %> <%= @app.joint_applicant_employer_zip %>
+	Supervisor					:	<%= @app.joint_applicant_employer_supervisor %>
+	Title/Grade					:	<%= @app.joint_applicant_current_title %>
+	Start Date					:	<%= @app.joint_applicant_employment_start_date %>
+	Hours at Work				:	<%= @app.hours_at_work_for_joint %>
+	Business, if self employed	:	<%= @app.type_of_business_for_joint %>
+	Income						:	<%= @app.joint_applicant_income %> <%= @app.joint_applicant_income_type %> <%= @app.joint_applicant_income_frequency %>
+	------------------ [ OTHER INCOME ] -------------------
+	Source						:	<%= @app.joint_applicant_other_income_source %>
+	Amount 						:  $<%= @app.joint_applicant_other_income %> <%= @app.joint_applicant_other_income_frequency %>	
+	Military duty next year		:	<%= @app.joint_applicant_military_duty %>
+	------------- [ PREVIOUS EMPLOYMENT ] -----------------
+	Employer					:	<%= @app.joint_applicant_previous_employer %>
+	Address						:	<%= @app.joint_applicant_previous_employer_address %> <%= @app.joint_applicant_previous_employer_city %> <%= @app.joint_applicant_previous_employer_state %> <%= @app.joint_applicant_previous_employer_zip %>
+	Start Date					:	<%= @app.joint_applicant_previous_employment_startdate %>
+	End Date					:	<%= @app.joint_applicant_previous_employment_enddate %>
+	---------------- [ REFERENCE DETAILS ] ----------------
+	Name						:	<%= @app.joint_applicant_reference_name %>
+	Relationship 				:	<%= @app.joint_applicant_reference_relationship %>
+	Address						:	<%= @app.joint_applicant_reference_address %> <%= @app.joint_applicant_reference_city %> <%= @app.joint_applicant_reference_state %> <%= @app.joint_applicant_reference_zip %>
+	Home Number					:	<%= @app.joint_applicant_reference_home_phone %>
+	-------------- [ DEBTS - WHAT YOU OWE ] ----------------
+	Mortgage/Rent 				:	<%= @app.joint_applicant_mortgage_rent %>
+	Creditor 					:	<%= @app.joint_applicant_creditor %>
+	Interest Rate 				:	<%= @app.joint_applicant_debt_interest_rate %>
+	Present Balance 			:	<%= @app.joint_applicant_mortgage_present_balance %>
+	Monthly Payment 			:	<%= @app.joint_applicant_mortgage_monthly_payment %>
+<% end %>
+-------------- [ END OF EMAIL TRANSMISSION] ------------

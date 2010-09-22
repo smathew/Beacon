@@ -1,0 +1,104 @@
+<h1>Editing memberapp</h1>
+
+<% form_for(@memberapp) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :ssn %><br />
+    <%= f.text_field :ssn %>
+  </p>
+  <p>
+    <%= f.label :salutation %><br />
+    <%= f.text_field :salutation %>
+  </p>
+  <p>
+    <%= f.label :joint_name %><br />
+    <%= f.text_field :joint_name %>
+  </p>
+  <p>
+    <%= f.label :address %><br />
+    <%= f.text_field :address %>
+  </p>
+  <p>
+    <%= f.label :city %><br />
+    <%= f.text_field :city %>
+  </p>
+  <p>
+    <%= f.label :state %><br />
+    <%= f.text_field :state %>
+  </p>
+  <p>
+    <%= f.label :zip %><br />
+    <%= f.text_field :zip %>
+  </p>
+  <p>
+    <%= f.label :home_phone %><br />
+    <%= f.text_field :home_phone %>
+  </p>
+  <p>
+    <%= f.label :work_phone %><br />
+    <%= f.text_field :work_phone %>
+  </p>
+  <p>
+    <%= f.label :birth_date %><br />
+    <%= f.text_field :birth_date %>
+  </p>
+  <p>
+    <%= f.label :member_eligibility %><br />
+    <%= f.text_field :member_eligibility %>
+  </p>
+  <p>
+    <%= f.label :badge_no %><br />
+    <%= f.text_field :badge_no %>
+  </p>
+  <p>
+    <%= f.label :hire_date %><br />
+    <%= f.text_field :hire_date %>
+  </p>
+  <p>
+    <%= f.label :email_address %><br />
+    <%= f.text_field :email_address %>
+  </p>
+  <p>
+    <%= f.label :time2call %><br />
+    <%= f.text_field :time2call %>
+  </p>
+  <p>
+    <%= f.label :citizen %><br />
+    <%= f.text_field :citizen %>
+  </p>
+  <p>
+    <%= f.label :account %><br />
+    <%= f.text_field :account %>
+  </p>
+  <p>
+    <%= f.label :overdraft_protection %><br />
+    <%= f.text_field :overdraft_protection %>
+  </p>
+  <p>
+    <%= f.label :typeof_protection %><br />
+    <%= f.text_field :typeof_protection %>
+  </p>
+  <p>
+    <%= f.label :atm_card %><br />
+    <%= f.text_field :atm_card %>
+  </p>
+  <p>
+    <%= f.label :mmdebit_card %><br />
+    <%= f.text_field :mmdebit_card %>
+  </p>
+  <p>
+    <%= f.label :audio_response %><br />
+    <%= f.text_field :audio_response %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @memberapp %> |
+<%= link_to 'Back', memberapps_path %>

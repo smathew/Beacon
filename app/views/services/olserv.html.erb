@@ -1,0 +1,20 @@
+<div class="innercontent clearfix">
+		<div class="margin">
+		  <h3>Online Services </h3>
+          <div id="floatleft"><%= image_tag "computer.gif", :alt => "computer" %>
+          <p class="prodhead"><%= link_to "Applications:", prodserv_loans_path %></p>
+          <blockquote>
+            <p class="products"><%= link_to "Membership Application", new_memberapp_path, :rel => "external" %> 
+			</p>
+            <p class="products"><%= link_to "Loan Application (LoanLiner&trade;)", new_loanapp_path, :rel => "external" %></p>
+            <p>&nbsp;</p>
+          </blockquote>
+          <p class="prodhead"><%= link_to "Request Information and Documentation for Other Services", new_rfi_path %>
+          </p>
+          <br /><br />
+          <p class="prodhead"><%= link_to "Loan Calculator", loancalc_path %></p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+		  </div>
+	</div>

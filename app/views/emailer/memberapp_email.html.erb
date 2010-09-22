@@ -1,0 +1,38 @@
+
+Date Submitted 	: 	<%= Time.now %>	
+----------- [ MEMBERSHIP APPLICATION ] ---------------
+----------- [ APPLICANT INFORMATION ] ----------------
+Name					:	<%= @app.salutation %> <%= @app.name %> 
+Joint Name 				:	<%= @app.joint_name %>
+Address					:	<%= @app.address %>
+City					:	<%= @app.city %>
+State					:	<%= @app.state %>
+Zip						:	<%= @app.zip %>
+Social Security Number	:	<%= @app.ssn %>
+Date of Birth			:	<%= @app.birth_date %>
+Home Number				:	<%= @app.home_phone %>
+Work Number				:	<%= @app.work_phone %>
+Email Address			:	<%= @app.email_address %>
+<% if !@app.member_eligibility.blank? %>
+Membership Eligibility 	:	<%= @app.member_eligibility %>
+<% end %>
+<% if !@app.badge_no.blank? %>
+Badge Number			:	<%= @app.badge_no %>
+<% end %>
+<% if !@app.hire_date.blank? %>
+Hire Date 				:	<%= @app.hire_date %>
+<% end %>
+<% if !@app.time2call.blank? %>
+Best Time to Call 		:	<%= @app.time2call %>
+<% end %>
+<% if !@app.citizen.blank? %>
+Are you a citizen 		:	<%= @app.citizen %>
+<% end %>
+
+-------------- [ MEMBERSHIP OPTIONS ] ----------------
+Type of account to open	: 	<%= @app.account %>
+<% if (@app.overdraft_protection == "yes") %>Overdraft Protection 	:	<%= @app.typeof_protection %><% end %>
+ATM Card 				:	<%= @app.atm_card %>
+MasterMoney Debit Card 	:	<%= @app.mmdebit_card %>
+Audio PIN 				:	<%= @app.audio_response %>
+-------------- [ END OF EMAIL TRANSMISSION] ------------

@@ -1,0 +1,524 @@
+<h1>Editing loanapp</h1>
+
+<% form_for(@loanapp) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :credit_type %><br />
+    <%= f.text_field :credit_type %>
+  </p>
+  <p>
+    <%= f.label :account_type %><br />
+    <%= f.text_field :account_type %>
+  </p>
+  <p>
+    <%= f.label :amount_requested %><br />
+    <%= f.text_field :amount_requested %>
+  </p>
+  <p>
+    <%= f.label :purpose_of_loan %><br />
+    <%= f.text_field :purpose_of_loan %>
+  </p>
+  <p>
+    <%= f.label :collateral_offered %><br />
+    <%= f.text_field :collateral_offered %>
+  </p>
+  <p>
+    <%= f.label :time_to_repay %><br />
+    <%= f.text_field :time_to_repay %>
+  </p>
+  <p>
+    <%= f.label :applicant_citizenship %><br />
+    <%= f.text_field :applicant_citizenship %>
+  </p>
+  <p>
+    <%= f.label :applicant_name %><br />
+    <%= f.text_field :applicant_name %>
+  </p>
+  <p>
+    <%= f.label :applicant_account_number %><br />
+    <%= f.text_field :applicant_account_number %>
+  </p>
+  <p>
+    <%= f.label :applicant_ssn %><br />
+    <%= f.text_field :applicant_ssn %>
+  </p>
+  <p>
+    <%= f.label :applicant_mother_maiden_name %><br />
+    <%= f.text_field :applicant_mother_maiden_name %>
+  </p>
+  <p>
+    <%= f.label :applicant_marital_status %><br />
+    <%= f.text_field :applicant_marital_status %>
+  </p>
+  <p>
+    <%= f.label :applicant_license_number %><br />
+    <%= f.text_field :applicant_license_number %>
+  </p>
+  <p>
+    <%= f.label :applicant_license_state %><br />
+    <%= f.text_field :applicant_license_state %>
+  </p>
+  <p>
+    <%= f.label :applicant_birth_date %><br />
+    <%= f.text_field :applicant_birth_date %>
+  </p>
+  <p>
+    <%= f.label :applicant_dependents_ages %><br />
+    <%= f.text_field :applicant_dependents_ages %>
+  </p>
+  <p>
+    <%= f.label :applicant_home_phone %><br />
+    <%= f.text_field :applicant_home_phone %>
+  </p>
+  <p>
+    <%= f.label :applicant_work_phone %><br />
+    <%= f.text_field :applicant_work_phone %>
+  </p>
+  <p>
+    <%= f.label :applicant_email_address %><br />
+    <%= f.text_field :applicant_email_address %>
+  </p>
+  <p>
+    <%= f.label :applicant_address %><br />
+    <%= f.text_field :applicant_address %>
+  </p>
+  <p>
+    <%= f.label :applicant_city %><br />
+    <%= f.text_field :applicant_city %>
+  </p>
+  <p>
+    <%= f.label :applicant_state %><br />
+    <%= f.text_field :applicant_state %>
+  </p>
+  <p>
+    <%= f.label :applicant_zip %><br />
+    <%= f.text_field :applicant_zip %>
+  </p>
+  <p>
+    <%= f.label :years_in_present_address %><br />
+    <%= f.text_field :years_in_present_address %>
+  </p>
+  <p>
+    <%= f.label :ownership_of_present_address %><br />
+    <%= f.text_field :ownership_of_present_address %>
+  </p>
+  <p>
+    <%= f.label :applicant_previous_address %><br />
+    <%= f.text_field :applicant_previous_address %>
+  </p>
+  <p>
+    <%= f.label :applicant_previous_city %><br />
+    <%= f.text_field :applicant_previous_city %>
+  </p>
+  <p>
+    <%= f.label :applicant_previous_state %><br />
+    <%= f.text_field :applicant_previous_state %>
+  </p>
+  <p>
+    <%= f.label :applicant_previous_zip %><br />
+    <%= f.text_field :applicant_previous_zip %>
+  </p>
+  <p>
+    <%= f.label :years_in_previous_address %><br />
+    <%= f.text_field :years_in_previous_address %>
+  </p>
+  <p>
+    <%= f.label :ownership_of_previous_address %><br />
+    <%= f.text_field :ownership_of_previous_address %>
+  </p>
+  <p>
+    <%= f.label :applicant_employer %><br />
+    <%= f.text_field :applicant_employer %>
+  </p>
+  <p>
+    <%= f.label :applicant_employer_address %><br />
+    <%= f.text_field :applicant_employer_address %>
+  </p>
+  <p>
+    <%= f.label :applicant_employer_city %><br />
+    <%= f.text_field :applicant_employer_city %>
+  </p>
+  <p>
+    <%= f.label :applicant_employer_state %><br />
+    <%= f.text_field :applicant_employer_state %>
+  </p>
+  <p>
+    <%= f.label :applicant_employer_zip %><br />
+    <%= f.text_field :applicant_employer_zip %>
+  </p>
+  <p>
+    <%= f.label :applicant_employer_supervisor %><br />
+    <%= f.text_field :applicant_employer_supervisor %>
+  </p>
+  <p>
+    <%= f.label :applicant_current_title %><br />
+    <%= f.text_field :applicant_current_title %>
+  </p>
+  <p>
+    <%= f.label :applicant_employment_start_date %><br />
+    <%= f.text_field :applicant_employment_start_date %>
+  </p>
+  <p>
+    <%= f.label :hours_at_work %><br />
+    <%= f.text_field :hours_at_work %>
+  </p>
+  <p>
+    <%= f.label :type_of_business %><br />
+    <%= f.text_field :type_of_business %>
+  </p>
+  <p>
+    <%= f.label :applicant_income %><br />
+    <%= f.text_field :applicant_income %>
+  </p>
+  <p>
+    <%= f.label :applicant_income_type %><br />
+    <%= f.text_field :applicant_income_type %>
+  </p>
+  <p>
+    <%= f.label :applicant_income_frequency %><br />
+    <%= f.text_field :applicant_income_frequency %>
+  </p>
+  <p>
+    <%= f.label :applicant_other_income_source %><br />
+    <%= f.text_field :applicant_other_income_source %>
+  </p>
+  <p>
+    <%= f.label :applicant_other_income %><br />
+    <%= f.text_field :applicant_other_income %>
+  </p>
+  <p>
+    <%= f.label :applicant_other_income_frequency %><br />
+    <%= f.text_field :applicant_other_income_frequency %>
+  </p>
+  <p>
+    <%= f.label :applicant_military_duty %><br />
+    <%= f.text_field :applicant_military_duty %>
+  </p>
+  <p>
+    <%= f.label :applicant_previous_employer %><br />
+    <%= f.text_field :applicant_previous_employer %>
+  </p>
+  <p>
+    <%= f.label :applicant_previous_employer_address %><br />
+    <%= f.text_field :applicant_previous_employer_address %>
+  </p>
+  <p>
+    <%= f.label :applicant_previous_employer_city %><br />
+    <%= f.text_field :applicant_previous_employer_city %>
+  </p>
+  <p>
+    <%= f.label :applicant_previous_employer_state %><br />
+    <%= f.text_field :applicant_previous_employer_state %>
+  </p>
+  <p>
+    <%= f.label :applicant_previous_employer_zip %><br />
+    <%= f.text_field :applicant_previous_employer_zip %>
+  </p>
+  <p>
+    <%= f.label :applicant_previous_employment_startdate %><br />
+    <%= f.text_field :applicant_previous_employment_startdate %>
+  </p>
+  <p>
+    <%= f.label :applicant_previous_employment_enddate %><br />
+    <%= f.text_field :applicant_previous_employment_enddate %>
+  </p>
+  <p>
+    <%= f.label :applicant_reference_name %><br />
+    <%= f.text_field :applicant_reference_name %>
+  </p>
+  <p>
+    <%= f.label :applicant_reference_relationship %><br />
+    <%= f.text_field :applicant_reference_relationship %>
+  </p>
+  <p>
+    <%= f.label :applicant_reference_address %><br />
+    <%= f.text_field :applicant_reference_address %>
+  </p>
+  <p>
+    <%= f.label :applicant_reference_city %><br />
+    <%= f.text_field :applicant_reference_city %>
+  </p>
+  <p>
+    <%= f.label :applicant_reference_state %><br />
+    <%= f.text_field :applicant_reference_state %>
+  </p>
+  <p>
+    <%= f.label :applicant_reference_zip %><br />
+    <%= f.text_field :applicant_reference_zip %>
+  </p>
+  <p>
+    <%= f.label :applicant_reference_home_phone %><br />
+    <%= f.text_field :applicant_reference_home_phone %>
+  </p>
+  <p>
+    <%= f.label :applicant_mortgage_rent %><br />
+    <%= f.text_field :applicant_mortgage_rent %>
+  </p>
+  <p>
+    <%= f.label :applicant_creditor %><br />
+    <%= f.text_field :applicant_creditor %>
+  </p>
+  <p>
+    <%= f.label :applicant_debt_interest_rate %><br />
+    <%= f.text_field :applicant_debt_interest_rate %>
+  </p>
+  <p>
+    <%= f.label :applicant_mortgage_present_balance %><br />
+    <%= f.text_field :applicant_mortgage_present_balance %>
+  </p>
+  <p>
+    <%= f.label :applicant_mortgage_monthly_payment %><br />
+    <%= f.text_field :applicant_mortgage_monthly_payment %>
+  </p>
+  <p>
+    <%= f.label :joint_applicant_citizenship %><br />
+    <%= f.text_field :joint_applicant_citizenship %>
+  </p>
+  <p>
+    <%= f.label :joint_applicant_name %><br />
+    <%= f.text_field :joint_applicant_name %>
+  </p>
+  <p>
+    <%= f.label :joint_applicant_account_number %><br />
+    <%= f.text_field :joint_applicant_account_number %>
+  </p>
+  <p>
+    <%= f.label :joint_applicant_ssn %><br />
+    <%= f.text_field :joint_applicant_ssn %>
+  </p>
+  <p>
+    <%= f.label :joint_applicant_mother_maiden_name %><br />
+    <%= f.text_field :joint_applicant_mother_maiden_name %>
+  </p>
+  <p>
+    <%= f.label :joint_applicant_marital_status %><br />
+    <%= f.text_field :joint_applicant_marital_status %>
+  </p>
+  <p>
+    <%= f.label :joint_applicant_license_number %><br />
+    <%= f.text_field :joint_applicant_license_number %>
+  </p>
+  <p>
+    <%= f.label :joint_applicant_license_state %><br />
+    <%= f.text_field :joint_applicant_license_state %>
+  </p>
+  <p>
+    <%= f.label :joint_applicant_birth_date %><br />
+    <%= f.text_field :joint_applicant_birth_date %>
+  </p>
+  <p>
+    <%= f.label :joint_applicant_dependents_ages %><br />
+    <%= f.text_field :joint_applicant_dependents_ages %>
+  </p>
+  <p>
+    <%= f.label :joint_applicant_home_phone %><br />
+    <%= f.text_field :joint_applicant_home_phone %>
+  </p>
+  <p>
+    <%= f.label :joint_applicant_work_phone %><br />
+    <%= f.text_field :joint_applicant_work_phone %>
+  </p>
+  <p>
+    <%= f.label :joint_applicant_email_address %><br />
+    <%= f.text_field :joint_applicant_email_address %>
+  </p>
+  <p>
+    <%= f.label :joint_applicant_address %><br />
+    <%= f.text_field :joint_applicant_address %>
+  </p>
+  <p>
+    <%= f.label :joint_applicant_city %><br />
+    <%= f.text_field :joint_applicant_city %>
+  </p>
+  <p>
+    <%= f.label :joint_applicant_state %><br />
+    <%= f.text_field :joint_applicant_state %>
+  </p>
+  <p>
+    <%= f.label :joint_applicant_zip %><br />
+    <%= f.text_field :joint_applicant_zip %>
+  </p>
+  <p>
+    <%= f.label :years_in_present_address_for_joint %><br />
+    <%= f.text_field :years_in_present_address_for_joint %>
+  </p>
+  <p>
+    <%= f.label :ownership_of_present_address_for_joint %><br />
+    <%= f.text_field :ownership_of_present_address_for_joint %>
+  </p>
+  <p>
+    <%= f.label :joint_applicant_previous_address %><br />
+    <%= f.text_field :joint_applicant_previous_address %>
+  </p>
+  <p>
+    <%= f.label :joint_applicant_previous_city %><br />
+    <%= f.text_field :joint_applicant_previous_city %>
+  </p>
+  <p>
+    <%= f.label :joint_applicant_previous_state %><br />
+    <%= f.text_field :joint_applicant_previous_state %>
+  </p>
+  <p>
+    <%= f.label :joint_applicant_previous_zip %><br />
+    <%= f.text_field :joint_applicant_previous_zip %>
+  </p>
+  <p>
+    <%= f.label :years_in_previous_address_for_joint %><br />
+    <%= f.text_field :years_in_previous_address_for_joint %>
+  </p>
+  <p>
+    <%= f.label :ownership_of_previous_address_for_joint %><br />
+    <%= f.text_field :ownership_of_previous_address_for_joint %>
+  </p>
+  <p>
+    <%= f.label :joint_applicant_employer %><br />
+    <%= f.text_field :joint_applicant_employer %>
+  </p>
+  <p>
+    <%= f.label :joint_applicant_employer_address %><br />
+    <%= f.text_field :joint_applicant_employer_address %>
+  </p>
+  <p>
+    <%= f.label :joint_applicant_employer_city %><br />
+    <%= f.text_field :joint_applicant_employer_city %>
+  </p>
+  <p>
+    <%= f.label :joint_applicant_employer_state %><br />
+    <%= f.text_field :joint_applicant_employer_state %>
+  </p>
+  <p>
+    <%= f.label :joint_applicant_employer_zip %><br />
+    <%= f.text_field :joint_applicant_employer_zip %>
+  </p>
+  <p>
+    <%= f.label :joint_applicant_employer_supervisor %><br />
+    <%= f.text_field :joint_applicant_employer_supervisor %>
+  </p>
+  <p>
+    <%= f.label :joint_applicant_current_title %><br />
+    <%= f.text_field :joint_applicant_current_title %>
+  </p>
+  <p>
+    <%= f.label :joint_applicant_employment_start_date %><br />
+    <%= f.text_field :joint_applicant_employment_start_date %>
+  </p>
+  <p>
+    <%= f.label :hours_at_work_for_joint %><br />
+    <%= f.text_field :hours_at_work_for_joint %>
+  </p>
+  <p>
+    <%= f.label :type_of_business_for_joint %><br />
+    <%= f.text_field :type_of_business_for_joint %>
+  </p>
+  <p>
+    <%= f.label :joint_applicant_income %><br />
+    <%= f.text_field :joint_applicant_income %>
+  </p>
+  <p>
+    <%= f.label :joint_applicant_income_type %><br />
+    <%= f.text_field :joint_applicant_income_type %>
+  </p>
+  <p>
+    <%= f.label :joint_applicant_income_frequency %><br />
+    <%= f.text_field :joint_applicant_income_frequency %>
+  </p>
+  <p>
+    <%= f.label :joint_applicant_other_income_source %><br />
+    <%= f.text_field :joint_applicant_other_income_source %>
+  </p>
+  <p>
+    <%= f.label :joint_applicant_other_income %><br />
+    <%= f.text_field :joint_applicant_other_income %>
+  </p>
+  <p>
+    <%= f.label :joint_applicant_other_income_frequency %><br />
+    <%= f.text_field :joint_applicant_other_income_frequency %>
+  </p>
+  <p>
+    <%= f.label :joint_applicant_military_duty %><br />
+    <%= f.text_field :joint_applicant_military_duty %>
+  </p>
+  <p>
+    <%= f.label :joint_applicant_previous_employer %><br />
+    <%= f.text_field :joint_applicant_previous_employer %>
+  </p>
+  <p>
+    <%= f.label :joint_applicant_previous_employer_address %><br />
+    <%= f.text_field :joint_applicant_previous_employer_address %>
+  </p>
+  <p>
+    <%= f.label :joint_applicant_previous_employer_city %><br />
+    <%= f.text_field :joint_applicant_previous_employer_city %>
+  </p>
+  <p>
+    <%= f.label :joint_applicant_previous_employer_state %><br />
+    <%= f.text_field :joint_applicant_previous_employer_state %>
+  </p>
+  <p>
+    <%= f.label :joint_applicant_previous_employer_zip %><br />
+    <%= f.text_field :joint_applicant_previous_employer_zip %>
+  </p>
+  <p>
+    <%= f.label :joint_applicant_previous_employment_startdate %><br />
+    <%= f.text_field :joint_applicant_previous_employment_startdate %>
+  </p>
+  <p>
+    <%= f.label :joint_applicant_previous_employment_enddate %><br />
+    <%= f.text_field :joint_applicant_previous_employment_enddate %>
+  </p>
+  <p>
+    <%= f.label :joint_applicant_reference_name %><br />
+    <%= f.text_field :joint_applicant_reference_name %>
+  </p>
+  <p>
+    <%= f.label :joint_applicant_reference_relationship %><br />
+    <%= f.text_field :joint_applicant_reference_relationship %>
+  </p>
+  <p>
+    <%= f.label :joint_applicant_reference_address %><br />
+    <%= f.text_field :joint_applicant_reference_address %>
+  </p>
+  <p>
+    <%= f.label :joint_applicant_reference_city %><br />
+    <%= f.text_field :joint_applicant_reference_city %>
+  </p>
+  <p>
+    <%= f.label :joint_applicant_reference_state %><br />
+    <%= f.text_field :joint_applicant_reference_state %>
+  </p>
+  <p>
+    <%= f.label :joint_applicant_reference_zip %><br />
+    <%= f.text_field :joint_applicant_reference_zip %>
+  </p>
+  <p>
+    <%= f.label :joint_applicant_reference_home_phone %><br />
+    <%= f.text_field :joint_applicant_reference_home_phone %>
+  </p>
+  <p>
+    <%= f.label :joint_applicant_mortgage_rent %><br />
+    <%= f.text_field :joint_applicant_mortgage_rent %>
+  </p>
+  <p>
+    <%= f.label :joint_applicant_creditor %><br />
+    <%= f.text_field :joint_applicant_creditor %>
+  </p>
+  <p>
+    <%= f.label :joint_applicant_debt_interest_rate %><br />
+    <%= f.text_field :joint_applicant_debt_interest_rate %>
+  </p>
+  <p>
+    <%= f.label :joint_applicant_mortgage_present_balance %><br />
+    <%= f.text_field :joint_applicant_mortgage_present_balance %>
+  </p>
+  <p>
+    <%= f.label :joint_applicant_mortgage_monthly_payment %><br />
+    <%= f.text_field :joint_applicant_mortgage_monthly_payment %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @loanapp %> |
+<%= link_to 'Back', loanapps_path %>

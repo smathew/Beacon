@@ -1,0 +1,29 @@
+<NotepadPlus>
+    <Session activeView="0">
+        <mainView activeIndex="19">
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="8520" startPos="464" endPos="464" selMode="0" lang="Normal Text" encoding="-1" filename="C:\Rails Projects\websites\Beacon\app\views\layouts\_header.html.erb" />
+            <File firstVisibleLine="33" xOffset="0" scrollWidth="5340" startPos="2670" endPos="2820" selMode="0" lang="Normal Text" encoding="-1" filename="C:\Rails Projects\websites\Beacon\app\views\services\prodserv_loans.html.erb" />
+            <File firstVisibleLine="125" xOffset="0" scrollWidth="5340" startPos="5626" endPos="5626" selMode="0" lang="Normal Text" encoding="-1" filename="C:\Rails Projects\websites\Beacon\app\views\services\rates_loan.html.erb" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="8520" startPos="492" endPos="508" selMode="0" lang="Normal Text" encoding="-1" filename="C:\Rails Projects\websites\Beacon\app\views\services\olserv.html.erb" />
+            <File firstVisibleLine="59" xOffset="0" scrollWidth="5340" startPos="2796" endPos="2796" selMode="0" lang="Normal Text" encoding="-1" filename="C:\Rails Projects\websites\Beacon\app\views\home\whatsnew.html.erb" />
+            <File firstVisibleLine="163" xOffset="0" scrollWidth="8520" startPos="5392" endPos="6927" selMode="0" lang="Normal Text" encoding="-1" filename="C:\Rails Projects\websites\Beacon\app\views\rfis\new.html.erb" />
+            <File firstVisibleLine="75" xOffset="0" scrollWidth="6260" startPos="2555" endPos="2555" selMode="0" lang="Normal Text" encoding="-1" filename="C:\Rails Projects\websites\Beacon\app\views\rfis\show.html.erb" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="8520" startPos="3954" endPos="3954" selMode="0" lang="Ruby" encoding="-1" filename="C:\Rails Projects\websites\Beacon\config\routes.rb" />
+            <File firstVisibleLine="45" xOffset="0" scrollWidth="1330" startPos="824" endPos="824" selMode="0" lang="Ruby" encoding="-1" filename="C:\Rails Projects\websites\Beacon\app\controllers\rfis_controller.rb" />
+            <File firstVisibleLine="40" xOffset="0" scrollWidth="5340" startPos="1579" endPos="2340" selMode="0" lang="Ruby" encoding="-1" filename="C:\Rails Projects\websites\Beacon\app\models\rfi.rb" />
+            <File firstVisibleLine="39" xOffset="0" scrollWidth="5340" startPos="1136" endPos="1179" selMode="0" lang="Ruby" encoding="-1" filename="C:\Rails Projects\websites\Bayridge\app\controllers\memberapps_controller.rb" />
+            <File firstVisibleLine="25" xOffset="0" scrollWidth="8520" startPos="2284" endPos="2284" selMode="0" lang="Ruby" encoding="-1" filename="C:\Rails Projects\websites\Beacon\config\environment.rb" />
+            <File firstVisibleLine="4" xOffset="0" scrollWidth="8520" startPos="845" endPos="845" selMode="0" lang="Ruby" encoding="-1" filename="C:\Rails Projects\websites\Beacon\app\models\emailer.rb" />
+            <File firstVisibleLine="19" xOffset="0" scrollWidth="5340" startPos="352" endPos="352" selMode="0" lang="Normal Text" encoding="-1" filename="C:\Rails Projects\websites\Beacon\app\views\emailer\rfi_email.html.erb" />
+            <File firstVisibleLine="11" xOffset="0" scrollWidth="8520" startPos="989" endPos="1034" selMode="0" lang="Normal Text" encoding="-1" filename="C:\Rails Projects\websites\Beacon\app\views\memberapps\new.html.erb" />
+            <File firstVisibleLine="33" xOffset="0" scrollWidth="8520" startPos="1048" endPos="1105" selMode="0" lang="Ruby" encoding="-1" filename="C:\Rails Projects\websites\Beacon\app\controllers\memberapps_controller.rb" />
+            <File firstVisibleLine="12" xOffset="0" scrollWidth="8520" startPos="1242" endPos="1135" selMode="0" lang="Normal Text" encoding="-1" filename="C:\Rails Projects\websites\Beacon\app\views\emailer\memberapp_email.html.erb" />
+            <File firstVisibleLine="41" xOffset="0" scrollWidth="8520" startPos="1139" endPos="2427" selMode="0" lang="Ruby" encoding="-1" filename="C:\Rails Projects\websites\Beacon\app\models\memberapp.rb" />
+            <File firstVisibleLine="93" xOffset="0" scrollWidth="8520" startPos="4960" endPos="4981" selMode="0" lang="Normal Text" encoding="-1" filename="C:\Rails Projects\websites\Beacon\app\views\loanapps\new.html.erb" />
+            <File firstVisibleLine="156" xOffset="0" scrollWidth="8520" startPos="10473" endPos="10473" selMode="0" lang="Ruby" encoding="-1" filename="C:\Rails Projects\websites\Beacon\app\models\loanapp.rb" />
+            <File firstVisibleLine="33" xOffset="0" scrollWidth="8520" startPos="1031" endPos="1031" selMode="0" lang="Ruby" encoding="-1" filename="C:\Rails Projects\websites\Beacon\app\controllers\loanapps_controller.rb" />
+            <File firstVisibleLine="92" xOffset="0" scrollWidth="8520" startPos="8286" endPos="8286" selMode="0" lang="Normal Text" encoding="-1" filename="C:\Rails Projects\websites\Beacon\app\views\emailer\loanapp_email.html.erb" />
+        </mainView>
+        <subView activeIndex="0" />
+    </Session>
+</NotepadPlus>

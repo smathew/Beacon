@@ -1,0 +1,144 @@
+<h1>Editing rfi</h1>
+
+<% form_for(@rfi) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :membership_application %><br />
+    <%= f.text_field :membership_application %>
+  </p>
+  <p>
+    <%= f.label :family_membership %><br />
+    <%= f.text_field :family_membership %>
+  </p>
+  <p>
+    <%= f.label :savings_account %><br />
+    <%= f.text_field :savings_account %>
+  </p>
+  <p>
+    <%= f.label :sharedraft_ac %><br />
+    <%= f.text_field :sharedraft_ac %>
+  </p>
+  <p>
+    <%= f.label :christmas_clubac %><br />
+    <%= f.text_field :christmas_clubac %>
+  </p>
+  <p>
+    <%= f.label :money_marketac %><br />
+    <%= f.text_field :money_marketac %>
+  </p>
+  <p>
+    <%= f.label :individual_retirement %><br />
+    <%= f.text_field :individual_retirement %>
+  </p>
+  <p>
+    <%= f.label :irashare_certificates %><br />
+    <%= f.text_field :irashare_certificates %>
+  </p>
+  <p>
+    <%= f.label :share_certificates %><br />
+    <%= f.text_field :share_certificates %>
+  </p>
+  <p>
+    <%= f.label :audio_response %><br />
+    <%= f.text_field :audio_response %>
+  </p>
+  <p>
+    <%= f.label :overdraft_loan %><br />
+    <%= f.text_field :overdraft_loan %>
+  </p>
+  <p>
+    <%= f.label :personal_loan %><br />
+    <%= f.text_field :personal_loan %>
+  </p>
+  <p>
+    <%= f.label :automobile_loan %><br />
+    <%= f.text_field :automobile_loan %>
+  </p>
+  <p>
+    <%= f.label :heloc %><br />
+    <%= f.text_field :heloc %>
+  </p>
+  <p>
+    <%= f.label :mortgage_loan %><br />
+    <%= f.text_field :mortgage_loan %>
+  </p>
+  <p>
+    <%= f.label :visa_creditcard %><br />
+    <%= f.text_field :visa_creditcard %>
+  </p>
+  <p>
+    <%= f.label :mac_atmcard %><br />
+    <%= f.text_field :mac_atmcard %>
+  </p>
+  <p>
+    <%= f.label :master_moneydc %><br />
+    <%= f.text_field :master_moneydc %>
+  </p>
+  <p>
+    <%= f.label :payroll_deduction %><br />
+    <%= f.text_field :payroll_deduction %>
+  </p>
+  <p>
+    <%= f.label :direct_deposit %><br />
+    <%= f.text_field :direct_deposit %>
+  </p>
+  <p>
+    <%= f.label :money_orders %><br />
+    <%= f.text_field :money_orders %>
+  </p>
+  <p>
+    <%= f.label :travelers_check %><br />
+    <%= f.text_field :travelers_check %>
+  </p>
+  <p>
+    <%= f.label :notary_service %><br />
+    <%= f.text_field :notary_service %>
+  </p>
+  <p>
+    <%= f.label :entertainment_tickets %><br />
+    <%= f.text_field :entertainment_tickets %>
+  </p>
+  <p>
+    <%= f.label :other_info %><br />
+    <%= f.text_field :other_info %>
+  </p>
+  <p>
+    <%= f.label :other_questions %><br />
+    <%= f.text_field :other_questions %>
+  </p>
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :phone %><br />
+    <%= f.text_field :phone %>
+  </p>
+  <p>
+    <%= f.label :email %><br />
+    <%= f.text_field :email %>
+  </p>
+  <p>
+    <%= f.label :address %><br />
+    <%= f.text_field :address %>
+  </p>
+  <p>
+    <%= f.label :city %><br />
+    <%= f.text_field :city %>
+  </p>
+  <p>
+    <%= f.label :state %><br />
+    <%= f.text_field :state %>
+  </p>
+  <p>
+    <%= f.label :zip %><br />
+    <%= f.text_field :zip %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @rfi %> |
+<%= link_to 'Back', rfis_path %>

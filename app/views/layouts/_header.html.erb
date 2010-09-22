@@ -1,0 +1,30 @@
+<div id="container">
+	<object type="application/x-shockwave-flash" data="headerflash.swf" width="755" height="151">
+	<param name="movie" value="headerflash.swf" />
+	<%= image_tag "banner.gif", :width => "755",  :height => "151",  :alt => "banner" %>
+	</object>
+        <div id="topmenu">
+			<%= link_to image_tag('menu_home_off.gif', :onmouseover => "this.src='images/menu_home_on2.gif'", :onmouseout => "this.src='images/menu_home_off.gif'", :alt => "Home"), root_path %>
+			<%= link_to image_tag('menu_hblogin_off.gif', :onmouseover => "this.src='images/menu_hblogin_on2.gif'", :onmouseout => "this.src='images/menu_hblogin_off.gif'", :alt => "Home Branch Login"), hb_loginv3_2_path %>
+			<%= link_to image_tag('menu_loanapp_off.gif', :onmouseover => "this.src='images/menu_loanapp_on2.gif'", :onmouseout => "this.src='images/menu_loanapp_off.gif'", :alt => "Loan Application"), new_loanapp_path %>
+			 <%= link_to image_tag('menu_rates_off.gif', :onmouseover => "this.src='images/menu_rates_on2.gif'", :onmouseout => "this.src='images/menu_rates_off.gif'", :alt => "Rates"), rates_path %>
+			 <%= link_to image_tag('menu_contact_off.gif', :onmouseover => "this.src='images/menu_contact_on2.gif'", :onmouseout => "this.src='images/menu_contact_off.gif'", :alt => "Contact Us"), contact_path %>
+        </div>  
+        <div id="outercontent" class="clearfix">
+            <div class="outerleft">
+                <ul class="menu">
+                    <li id="borderbottom"><%= link_to "Entre En Espanol", hb_loginsp_path %></li>
+                    <li><%= link_to "What's New", whatsnew_path %></li>
+                    <li><%= link_to "About Us", aboutus_path %></li>
+                    <li><%= link_to "Products &amp; Services", prodnservices_path %></li>
+                    <li><%= link_to "Online Services", olserv_path %></li>
+                    <li><%= link_to "Loan Calculator", loancalc_path %></li>
+                    <li><%= link_to "Request Information", new_rfi_path %></li>
+                    <li><%= link_to "Hotlinks", links_path %></li>
+                    <li><%= link_to "Newsletter", "pdf/newsletter.pdf" %></li>
+                    <li><%= link_to "Repos for Sale", whatsnew_path %></li>
+                    <li id="bordertop"><%= link_to image_tag("http://www.kirbykangaroo.com/images/branding/kirby_banner_ad2.gif", :alt => "Kirby Kangaroo"), "http://www.kirbykangaroo.com/index.php?cuid=38034331", :rel => "external" %></li>
+                    <li><%= link_to image_tag("annualreport.jpg", :alt => "Annual Report"), "pdf/annualreport.pdf", :rel =>"external" %></li>
+              </ul>
+   </div>
+        <div id="outerright" class="clearfix">

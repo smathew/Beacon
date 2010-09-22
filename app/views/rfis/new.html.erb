@@ -1,0 +1,195 @@
+<div class="innercontent clearfix">
+	<div class="margin">
+	<% form_for(@rfi) do |f| %>
+		<%= f.error_messages %>
+		<h3>Request Information </h3>
+			<hr />
+            <h3>Send me Information on the Following Services <br />
+                (choose as many as you need):</h3>
+				<p><%=check_box("rfi", "membership_application", {}, "yes", "no")%>  <strong>Membership Application</strong></p>
+                <p>
+				  <%=check_box("rfi", "family_membership", {}, "yes", "no")%>
+                  <strong>Family Membership</strong></p>
+                <p>
+				  <%=check_box("rfi", "savings_account", {}, "yes", "no")%>
+               <strong>Savings Account</strong>
+                </p>
+                <p>
+				  <%=check_box("rfi", "sharedraft_ac", {}, "yes", "no")%>
+                  <strong>Share Draft (Checking) Account</strong>
+                </p>
+                <p>
+				  <%=check_box("rfi", "christmas_clubac", {}, "yes", "no")%>
+                  <strong>Christmas Club Account</strong>
+                  </p>
+                <p>
+				  <%=check_box("rfi", "money_marketac", {}, "yes", "no")%>
+                 <strong>Money Market Account</strong>
+                </p>
+                <p>
+				  <%=check_box("rfi", "individual_retirement", {}, "yes", "no")%>
+                  <strong>Individual Retirement Account (IRA)</strong>
+                </p>
+                <p>
+				  <%=check_box("rfi", "irashare_certificates", {}, "yes", "no")%>
+                    <strong>IRA Share Certificates</strong>
+                </p>
+                <p>
+				  <%=check_box("rfi", "share_certificates", {}, "yes", "no")%>
+                  <strong>Share Certificates</strong>
+                  </p>
+                <p>
+				  <%=check_box("rfi", "audio_response", {}, "yes", "no")%>
+                 <strong>Audio Response information and PIN Number for activation</strong>
+                </p>
+                <p>
+				  <%=check_box("rfi", "overdraft_loan", {}, "yes", "no")%>
+                  <strong>Overdraft Loan Information</strong>
+                </p>
+                <p>
+				  <%=check_box("rfi", "personal_loan", {}, "yes", "no")%>
+                  <strong>Personal Loan Information</strong>
+                </p>
+                <p>
+				  <%=check_box("rfi", "automobile_loan", {}, "yes", "no")%>
+                  <strong>Automobile Loan Information</strong>
+                </p>
+                <p>
+				  <%=check_box("rfi", "heloc", {}, "yes", "no")%>
+                  <strong>Home Equity Line of Credit Loan Information</strong>
+                </p>
+                <p>
+				  <%=check_box("rfi", "mortgage_loan", {}, "yes", "no")%>
+                  <strong>Mortgage Loan Information and Application</strong>
+                </p>
+                <p>
+				  <%=check_box("rfi", "visa_creditcard", {}, "yes", "no")%>
+                  <strong>VISA&trade; Credit Cards</strong>
+                </p>
+                <p>
+				  <%=check_box("rfi", "mac_atmcard", {}, "yes", "no")%>
+                    <strong>MAC&trade; ATM Card</strong>
+                </p>
+                <p>
+				  <%=check_box("rfi", "master_moneydc", {}, "yes", "no")%>
+                  <strong>MasterMoney&trade; Debit Card</strong>
+                </p>
+                <p>
+				  <%=check_box("rfi", "payroll_deduction", {}, "yes", "no")%>
+                  <strong>Payroll Deduction</strong>
+                  </p>
+                <p>
+				  <%=check_box("rfi", "direct_deposit", {}, "yes", "no")%>
+                  <strong>Direct Deposit/Net Pay</strong>
+                  </p>
+                <p>
+				  <%=check_box("rfi", "money_orders", {}, "yes", "no")%>
+                  <strong>Money Orders</strong>
+                  </p>
+                <p>
+				  <%=check_box("rfi", "travelers_check", {}, "yes", "no")%>
+                  <strong>Traveler's Checks</strong>
+                  </p>
+                <p>
+				  <%=check_box("rfi", "notary_service", {}, "yes", "no")%>
+                  <strong>Free Notary Service</strong>
+                  </p>
+                <p>
+				  <%=check_box("rfi", "entertainment_tickets", {}, "yes", "no")%>
+                  <strong>Discount Entertainment Tickets</strong>
+                  </p>
+                <p>
+				  <%=check_box("rfi", "other_info", {}, "yes", "no")%>
+                  <strong>Other information you want to request or information you want to tell us:</strong>
+                </p>
+                <p class="centertext">
+					<%= f.text_area :other_questions, :cols => 55, :rows => 5 %>
+                </p>              
+              <hr />              
+              <table>
+                  <tr>
+                    <td>Name:
+                    </td>
+                    <td><%= f.text_field :name, :size => 20 %></td>
+                    <td>Phone:
+                    </td>
+                    <td><%= f.text_field :phone, :size => 20 %></td>
+                  </tr>
+                  <tr>
+                    <td>E-Mail Address:
+                    </td>
+                    <td><%= f.text_field :email, :size => 20 %></td>
+                    <td>Home Address:
+                    </td>
+                    <td><%= f.text_field :address, :size => 20 %></td>
+                  </tr>
+                  <tr>
+                    <td>City:</td>
+                    <td><%= f.text_field :city, :size => 10 %></td>
+                    <td>State:<%= f.select( :state,
+						{ "Alabama" => "AL", 
+						  "Alaska" => "AK", 
+						  "Arizona" => "AZ", 
+						  "Arkansas" => "AR", 
+						  "California" => "CA", 
+						  "Colorado" => "CO",
+						  "Connecticut" => "CT", 
+						  "Delaware" => "DE", 
+						  "District Of Columbia" => "DC", 
+						  "Florida" => "FL", 
+						  "Georgia" => "GA", 
+						  "Hawaii" => "HI",
+						  "Idaho" => "ID", 
+						  "Illinois" => "IL", 
+						  "Indiana" => "IN", 
+						  "Iowa" => "IO", 
+						  "Kansas" => "KS", 
+						  "Kentucky" => "KY",
+						  "Louisiana" => "LA", 
+						  "Maine" => "ME", 
+						  "Maryland" => "MD", 
+						  "Massachusetts" => "MA", 
+						  "Michigan" => "MI", 
+						  "Minnesota" => "MN",
+						  "Mississippi" => "MS", 
+						  "Missouri" => "MO", 
+						  "Montana" => "MT", 
+						  "Nebraska" => "NE", 
+						  "Nevada" => "NV", 
+						  "New Hampshire" => "NH",
+						  "New Jersey" => "NJ", 
+						  "New Mexico" => "NM", 
+						  "New York" => "NY", 
+						  "North Carolina" => "NC", 
+						  "North Dakota" => "ND", 
+						  "Ohio" => "OH",
+						  "Oklahoma" => "OK", 
+						  "Oregon" => "OR", 
+						  "Pennsylvania" => "PA", 
+						  "Rhode Island" => "RI", 
+						  "South Carolina" => "SC", 
+						  "South Dakota" => "SD",
+						  "Tennessee" => "TN", 
+						  "Texas" => "TX", 
+						  "Utah" => "UT", 
+						  "Vermont" => "VT", 
+						  "Virginia" => "VA", 
+						  "Washington" => "WA",
+						  "West Virginia" => "WV",
+						  "Wisconsin" => "WI",
+						  "Wyoming" => "WY"
+						 }) %> 
+                    </td>
+                    <td>Zip:
+                      <%= f.text_field :zip, :size => 5, :maxlength => 5 %>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="4" align="center"><br />
+					<%= f.submit 'Submit Information Request' %>
+                    </td>
+                  </tr>
+              </table>
+              <hr />
+	<% end %>
+</div>

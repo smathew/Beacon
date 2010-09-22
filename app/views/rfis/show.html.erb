@@ -1,0 +1,126 @@
+<div class="innercontent clearfix">
+	<div class="margin">
+<p style="color: green", align=center><%= flash[:notice] %></p>
+<table>
+	<tr><td colspan="2">
+	  <strong>You have requested information for the following:</strong>
+    </td></tr>
+	<tr><td colspan="2">
+	  <ol>
+		<% if (@rfi.membership_application == "yes") %>
+			<li>Membership Application</li>
+		<% end %>
+		<% if (@rfi.family_membership == "yes") %>
+			<li>Family Membership</li>
+		<% end %>
+		<% if (@rfi.savings_account == "yes") %>
+			<li>Savings Account</li>
+		<% end %>
+		<% if (@rfi.sharedraft_ac == "yes") %>
+			<li>Share Draft (Checking) Account</li>
+		<% end %>
+		<% if (@rfi.christmas_clubac == "yes") %>
+			<li>Christmas Club Account</li>
+		<% end %>
+		<% if (@rfi.money_marketac == "yes") %>
+			<li>Money Market Account</li>
+		<% end %>
+		<% if (@rfi.individual_retirement == "yes") %>
+			<li>Individual Retirement Account (IRA)</li>
+		<% end %>
+		<% if (@rfi.irashare_certificates == "yes") %>
+			<li>IRA Share Certificates</li>
+		<% end %>
+		<% if (@rfi.share_certificates == "yes") %>
+			<li>Share Certificates</li>
+		<% end %>
+		<% if (@rfi.audio_response == "yes") %>
+			<li>Audio Response information and PIN Number for activation</li>
+		<% end %>
+		<% if (@rfi.overdraft_loan == "yes") %>
+			<li>Overdraft Loan Information</li>
+		<% end %>
+		<% if (@rfi.personal_loan == "yes") %>
+			<li>Personal Loan Information</li>
+		<% end %>
+		<% if (@rfi.automobile_loan == "yes") %>
+			<li>Automobile Loan Information</li>
+		<% end %>
+		<% if (@rfi.heloc == "yes") %>
+			<li>Home Equity Line of Credit Loan Informatio</li>
+		<% end %>
+		<% if (@rfi.mortgage_loan == "yes") %>
+			<li>Mortgage Loan Information and Application</li>
+		<% end %>
+		<% if (@rfi.visa_creditcard == "yes") %>
+			<li>VISA&trade; Credit Cards</li>
+		<% end %>
+		<% if (@rfi.mac_atmcard == "yes") %>
+			<li>MAC&trade; ATM Card</li>
+		<% end %>
+		<% if (@rfi.master_moneydc == "yes") %>
+			<li>MasterMoney&trade; Debit Card</li>
+		<% end %>
+		<% if (@rfi.payroll_deduction == "yes") %>
+			<li>Payroll Deduction</li>
+		<% end %>
+		<% if (@rfi.direct_deposit == "yes") %>
+			<li>Direct Deposit/Net Pay</li>
+		<% end %>
+		<% if (@rfi.money_orders == "yes") %>
+			<li>Money Orders</li>
+		<% end %>
+		<% if (@rfi.travelers_check == "yes") %>
+			<li>Traveler's Checks</li>
+		<% end %>
+		<% if (@rfi.notary_service == "yes") %>
+			<li>Free Notary Service</li>
+		<% end %>
+		<% if (@rfi.entertainment_tickets == "yes") %>
+			<li>Discount Entertainment Tickets</li>
+		<% end %>
+		<% if (@rfi.other_info == "yes") %>
+			<li>
+				Other information you want to request or information you want to tell us:<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	<%=h @rfi.other_questions %>
+			</li>
+		<% end %>
+	  </ol>
+    </td></tr>
+	<tr><td colspan="2"><br /><br /></td></tr>
+    <tr><td>
+	  <strong>Name:</strong>
+	</td><td>
+		<%=h @rfi.name %>
+	</td></tr>
+	<tr><td>
+	  <strong>Phone:</strong>
+	</td><td>
+		<%=h @rfi.phone %>
+	</td></tr>
+	<tr><td>
+	  <strong>Email:</strong>
+	</td><td>
+		<%=h @rfi.email %>
+	</td></tr>
+	<tr><td>
+	  <strong>Address:</strong>
+	</td><td>
+		<%=h @rfi.address %>
+	</td></tr>
+	<tr><td>
+	  <strong>City:</strong>
+	</td><td>
+		<%=h @rfi.city %>
+	</td></tr>
+	<tr><td>
+	  <strong>State:</strong>
+	</td><td>
+		<%=h @rfi.state %>
+	</td></tr>
+	<tr><td>
+	  <strong>Zip:</strong>
+	</td><td>
+		<%=h @rfi.zip %>
+	</td></tr>
+</table>
+</div>

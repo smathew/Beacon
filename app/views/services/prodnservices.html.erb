@@ -1,0 +1,33 @@
+<div class="innercontent clearfix">
+		<div class="margin">
+		  <h3>Products and Services </h3>
+          <p class="floatleft">A  variety of services is what makes our credit union convenient to you.  
+          We have always prided ourselves on the ability to give each member  personal friendly service. 
+          Be sure to check this page often for new  services.</p>
+          <%= image_tag "insurance.jpg", :alt =>"" %>
+          <p class="prodhead"><%= link_to "Loan Products:", prodserv_loans_path %></p>
+          <blockquote>
+            <p class="products"><%= link_to "First &amp; Second Mortgage Loans", prodserv_loans_path, :anchor => "mortgage" %></p>
+            <p class="products"><%= link_to "Home Equity Line-of Credit Loans", prodserv_loans_path, :anchor => "mortgage" %></p>
+            <p class="products"><%= link_to "Automobile Loans", prodserv_loans_path, :anchor => "automobile" %></p>
+            <p class="products"><%= link_to "Boat Loans, Motorcycle Loans, RV Loans", prodserv_loans_path, :anchor => "boat" %></p>
+            <p class="products"><%= link_to "Signature Loans, Revolving Credit Loans", prodserv_loans_path, :anchor => "signature" %></p>
+            <p class="products"><%= link_to "Loan Protection Insurance", prodserv_loans_path, :anchor => "insurance" %></p>
+          </blockquote>
+          <p class="prodhead"><%= link_to "Savings Products:", prodserv_savings_path %></p>
+          <blockquote>
+            <p class="products"><%= link_to "Share Accounts (Savings)", prodserv_savings_path, :anchor => "shareaccounts" %></p>
+            <p class="products"><%= link_to "Share Draft Accounts (Checking)", prodserv_savings_path, :anchor => "sharedraft" %></p>
+            <p class="products"><%= link_to "Money Market Accounts", prodserv_savings_path, :anchor => "mm" %></p>
+            <p class="products"><%= link_to "Christmas Club Accounts, Vacations Accounts, Escrow Accounts", prodserv_savings_path, :anchor => "christmas" %></p>
+            <p class="products"><%= link_to "IRA Savings Accounts", prodserv_savings_path, :anchor => "ira" %></p>
+            <p class="products"><%= link_to "Share Certificates (CD's)", prodserv_savings_path, :anchor => "cd" %></p>
+          </blockquote>
+          <p class="prodhead"><%= link_to "Other Products:", prodserv_other_path %></p>
+          <blockquote>
+            <p class="products"><%= link_to "Discount tickets to amusement parks", prodserv_other_path, :anchor => "tickets" %></p>
+            <p class="products"><%= link_to "Audio Teller Access", prodserv_other_path, :anchor => "audio" %></p>
+            <p class="products"><%= link_to "Insurance Plans", prodserv_other_path, :anchor => "plans" %></p>
+            <p class="products"><%= link_to "Payroll Deduction", prodserv_other_path, :anchor => "other" %></p>
+          </blockquote>
+        </div>

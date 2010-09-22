@@ -1,0 +1,75 @@
+<div class="innercontent clearfix">
+		<div class="margin">
+		  <h3>Home Branch Login</h3>
+          <p align="left"><strong>*PLEASE NOTE:</strong> If you are having trouble accessing your   home branch and are coming to the site thru a &quot;favorites&quot; link, please DELETE   the favorite&hellip; go to our site by typing <strong>www.beaconccu.org</strong>,   selecting <strong>home branch login</strong> and then re-adding it as your   favorite. We apologize for any inconvenience.<br />
+              <br />
+            Check out all of the benefits   to Home Branch. Enter now to discover the fast, convenient access available   through Home Branch. With your Audio Teller&nbsp; <strong>Personal Identification   Number</strong> (PIN) you can see all of your accounts, view transactions and even   transfer funds - all at the touch of your fingertips. You can personalize your   first page to show you the account information you want NOW. And if you ever   need help, we're just an email away! If you do not have a Home Branch/Audio   Teller&nbsp;PIN, request it <%= mail_to "beaconccu@beaconccu.org", "here" %>.</p>
+          <p>&nbsp;</p>			
+          <form id="hblogin" method="post" action="https://www.beaconccu.org/hbv3_2/login.asp">
+            <fieldset>
+                <table>
+                    <tr>
+				<td align="left"><br>
+					<%= link_to image_tag("hbimages/enespanol.gif", :width => 90, :height => 23, :alt =>"", :border =>"0"), hb_loginsp_path %>
+				</td>
+			</tr>
+                    <tr>
+                        <td>
+                            <table class="login">
+                                <tr>
+                                    <td class="right"><strong>Account #:</strong></td>
+                                    <td><strong><input type="text" size="15" name="account" /></strong></td>
+                                </tr>
+                                <tr>
+                                    <td class="right"><strong>PIN:</strong></td>
+                                    <td><strong><input type="password" size="15" name="pin" /></strong></td>
+                                </tr>
+                                <tr>
+                                    <td class="right" colspan="2"><p class="centertext">
+                                    <input type="submit" value="Sign In" class="signin" /></p></td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td>
+                            <table class="loginwhite">
+                                <tr>
+                                    <td><%= image_tag "barrow.gif", :alt =>"" %>
+                                        <%= link_to "FAQ", hb_faq_path, :rel => "external" %></td>
+                                </tr>
+                                <tr>
+                                    <td><%= image_tag "barrow.gif", :alt => "" %>
+                                        <%= link_to "Security Information", hb_security_path, :rel => "external" %></td>
+                                </tr>
+                                <tr>
+                                    <td><%= image_tag "barrow.gif", :alt => "" %>
+                                        <%= mail_to "beaconccu@beaconccu.org", "Request PIN" %></td>
+                                </tr>
+                                <tr>
+                                    <td><%= image_tag "barrow.gif", :alt =>"" %>
+                                        <%= link_to "Privacy Disclosure", disclosure_path, :rel => "external" %></td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+                <br />
+                <table>
+                    <tr>
+                        <td><%= link_to image_tag("security.jpg", :alt => ""), security_notification_path %></a></td>
+                      <td><%= image_tag "arrows.gif", :alt =>"" %></td>
+                    </tr>
+                </table>
+    <br />
+                    <%= mail_to "beaconccu@beaconccu.org", image_tag("email_graphic.gif", :alt => "") %>
+                </p>
+                <p>
+                    Home Branch requires the following browsers (Netscape
+                    4.7) for security and for the best viewing experience:
+                </p>
+                <p class="centertext">
+                    <%= link_to image_tag("commun.gif", :alt =>""), "http://www.netscape.com/comprod/mirror/client_download.html" %>
+                    &nbsp;<%= link_to image_tag("current_ie.gif", :alt =>""), "http://www.microsoft.com/ie/download" %>
+                </p>
+            </fieldset>
+        </form>
+        </div>

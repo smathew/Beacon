@@ -1,0 +1,361 @@
+<div class="innercontent clearfix">
+	<div class="margin">
+<p style="color: green", align=center><%= flash[:notice] %></p>
+<table>
+	<tr><td colspan="2">
+	  <strong>The following information has been submitted:</strong>
+    </td></tr>
+	<tr><td align="center">LOAN APPLICATION
+	</td></tr>
+	<tr><td colspan="2"><br /><br /></td></tr>
+	<tr><td>
+	  <strong>Credit Type :</strong></td><td><%=h @loanapp.credit_type %></td></tr>
+    <tr><td>
+	  <strong>Type of Account :</strong></td><td><%=h @loanapp.account_type %>
+	</td></tr>
+	<tr><td>
+	  <strong>Amount requested:</strong></td><td><%=h @loanapp.amount_requested %>
+	</td></tr>
+	<tr><td>
+	  <strong>Purpose of loan:</strong></td><td><%=h @loanapp.purpose_of_loan %>
+	</td></tr>
+	<tr><td>
+	  <strong>Collateral offered:</strong></td><td><%=h @loanapp.collateral_offered %>
+	</td></tr>
+	<tr><td>
+	  <strong>Approx Time to Repay:</strong></td><td><%=h @loanapp.time_to_repay %>
+	</td></tr>
+	<tr><td colspan="2" align="center">
+			<strong>APPLICANT DETAILS</strong>
+		</td></tr>
+	<tr><td>
+	  <strong>U.S. Citizen</strong></td><td><%=h @loanapp.applicant_citizenship %>
+	</td></tr>
+	<tr><td>
+	  <strong>Applicant name:</strong></td><td><%=h @loanapp.applicant_name %>
+	</td></tr>
+	<tr><td>
+	  <strong>Applicant Account Number :</strong></td><td><%=h @loanapp.applicant_account_number %>
+	</td></tr>
+	<tr><td>
+	  <strong>Applicant Mother's maiden name::</strong></td><td><%=h @loanapp.applicant_mother_maiden_name %>
+	</td></tr>
+	<tr><td>
+	  <strong>Applicant marital status:</strong></td><td><%=h @loanapp.applicant_marital_status %>
+	</td></tr>
+	<tr><td>
+	  <strong>Applicant License Number:</strong></td><td><%=h @loanapp.applicant_license_number %>
+	</td></tr>
+	<tr><td>
+	  <strong>State where license was taken:</strong></td><td><%=h @loanapp.applicant_license_state %>
+	</td></tr>
+	<tr><td>
+	  <strong>Applicant birth date:</strong></td><td><%=h @loanapp.applicant_birth_date %>
+	</td></tr>
+	<tr><td>
+	  <strong>Ages of dependents:</strong></td><td><%=h @loanapp.applicant_dependents_ages %>
+	</td></tr>
+	<tr><td>
+	  <strong>Applicant Home Phone:</strong></td><td><%=h @loanapp.applicant_home_phone %>
+	</td></tr>
+	<tr><td>
+	  <strong>Applicant Work Phone:</strong></td><td><%=h @loanapp.applicant_work_phone %>
+	</td></tr>
+	<tr><td>
+	  <strong>Applicant email address:</strong></td><td><%=h @loanapp.applicant_email_address %>
+	</td></tr>
+	<tr><td>
+	  <strong>Applicant Address:</strong></td><td><%=h @loanapp.applicant_address %>
+	</td></tr>
+	<tr><td>
+	  <strong>Applicant City:</strong></td><td><%=h @loanapp.applicant_city %>
+	</td></tr>
+	<tr><td>
+	  <strong>Applicant State:</strong></td><td><%=h @loanapp.applicant_state %>
+	</td></tr>
+	<tr><td>
+	  <strong>Applicant Zip:</strong></td><td><%=h @loanapp.applicant_zip %>
+	</td></tr>
+	<tr><td>
+	  <strong>Years in present address:</strong></td><td><%=h @loanapp.years_in_present_address %>
+	</td></tr>
+	<tr><td>
+	  <strong>Ownership of present address:</strong></td><td><%=h @loanapp.ownership_of_present_address %>
+	</td></tr>
+	<% if !@loanapp.applicant_previous_address.blank? %>
+		<tr><td>
+		  <strong>Applicant previous address:</strong></td><td><%=h @loanapp.applicant_previous_address %> <%=h @loanapp.applicant_previous_city %> <%=h @loanapp.applicant_previous_state %> <%=h @loanapp.applicant_previous_zip %>
+		</td></tr>
+		<tr><td>
+		  <strong>Years in previous address:</strong></td><td><%=h @loanapp.years_in_previous_address %>
+		</td></tr>
+		<tr><td>
+		  <strong>Ownership of previous address:</strong></td><td><%=h @loanapp.ownership_of_previous_address %>
+		</td></tr>
+	<% end %>
+	<tr><td>
+	  <strong>Employer of Applicant :</strong></td><td><%=h @loanapp.applicant_employer %>
+	</td></tr>
+	<% if !@loanapp.applicant_employer_address.blank? %>
+		<tr><td>
+		  <strong>Applicant employer address:</strong></td><td><%=h @loanapp.applicant_employer_address %> <%=h @loanapp.applicant_employer_city %> <%=h @loanapp.applicant_employer_state %> <%=h @loanapp.applicant_employer_zip %>
+		</td></tr>
+	<% end %>
+	<% if !@loanapp.applicant_employer_supervisor.blank? %>
+	<tr><td>
+	  <strong>Applicant employer supervisor:</strong></td><td><%=h @loanapp.applicant_employer_supervisor %>
+	</td></tr>
+	<% end %>
+	<% if !@loanapp.applicant_current_title.blank? %>
+	<tr><td>
+	  <strong>Applicant current title:</strong></td><td><%=h @loanapp.applicant_current_title %>
+	</td></tr>
+	<% end %>
+	<tr><td>
+	  <strong>Applicant employment start date:</strong></td><td><%=h @loanapp.applicant_employment_start_date %>
+	</td></tr>
+	<% if !@loanapp.hours_at_work.blank? %>
+	<tr><td>
+	  <strong>Number of Hours at work:</strong></td><td><%=h @loanapp.hours_at_work %>
+	</td></tr>
+	<% end %>
+	<% if !@loanapp.type_of_business.blank? %>
+	<tr><td>
+	  <strong>If self employed, Type of business:</strong></td><td><%=h @loanapp.type_of_business %>
+	</td></tr>
+	<% end %>
+	<tr><td>
+	  <strong>Applicant income:</strong></td><td><%=h @loanapp.applicant_income %> <%=h @loanapp.applicant_income_type %> <%=h @loanapp.applicant_income_frequency %>
+	</td></tr>
+	<% if !@loanapp.applicant_other_income_source.blank? %>
+	<tr><td>
+	  <strong>Applicant Other Income Source:</strong></td><td><%=h @loanapp.applicant_other_income_source %>
+	</td></tr>
+	<tr><td>
+	  <strong>Applicant Other Income Amount:</strong></td><td><%=h @loanapp.applicant_other_income %> <%=h @loanapp.applicant_other_income_frequency %>
+	</td></tr>
+	<% end %>
+	<% if !@loanapp.applicant_military_duty.blank? %>
+	<tr><td>
+	  <strong>Applicant expecting military duty the next year:</strong></td><td><%=h @loanapp.applicant_military_duty %>
+	</td></tr>
+	<% end %>
+	<% if !@loanapp.applicant_previous_employer.blank? %>
+	<tr><td>
+	  <strong>Applicant previous employer:</strong></td><td><%=h @loanapp.applicant_previous_employer %>
+	</td></tr>
+		<% if !@loanapp.applicant_previous_employer_address.blank? %>	
+		<tr><td>
+		  <strong>Applicant previous employer address:</strong></td><td><%=h @loanapp.applicant_previous_employer_address %> <%=h @loanapp.applicant_previous_employer_city %> <%=h @loanapp.applicant_previous_employer_state %> <%=h @loanapp.applicant_previous_employer_zip %>
+		</td></tr>
+		<% end %>
+	<tr><td>
+	  <strong>Applicant previous employment startdate:</strong></td><td><%=h @loanapp.applicant_previous_employment_startdate %>
+	</td></tr>
+	<tr><td>
+	  <strong>Applicant previous employment enddate:</strong></td><td><%=h @loanapp.applicant_previous_employment_enddate %>
+	</td></tr>
+	<% end %>
+	<% if !@loanapp.applicant_reference_name.blank? %>
+	<tr><td>
+	  <strong>Applicant reference name:</strong></td><td><%=h @loanapp.applicant_reference_name %>
+	</td></tr>
+	<tr><td>
+	  <strong>Applicant reference relationship:</strong></td><td><%=h @loanapp.applicant_reference_relationship %>
+	</td></tr>
+		<% if !@loanapp.applicant_reference_address.blank? %>
+		<tr><td>
+		  <strong>Applicant reference address:</strong></td><td><%=h @loanapp.applicant_reference_address %> <%=h @loanapp.applicant_reference_city %> <%=h @loanapp.applicant_reference_state %> <%=h @loanapp.applicant_reference_zip %>
+		</td></tr>
+		<% end %>
+	<tr><td>
+	  <strong>Applicant reference home phone:</strong></td><td><%=h @loanapp.applicant_reference_home_phone %>
+	</td></tr>
+	<% end %>
+	<% if !@loanapp.applicant_mortgage_rent.blank? %>
+	<tr><td>
+	  <strong>Applicant Mortgage/Rent:</strong></td><td><%=h @loanapp.applicant_mortgage_rent %>
+	</td></tr>
+	<tr><td>
+	  <strong>Applicant creditor:</strong></td><td><%=h @loanapp.applicant_creditor %>
+	</td></tr>
+	<tr><td>
+	  <strong>Applicant debt interest rate:</strong></td><td><%=h @loanapp.applicant_debt_interest_rate %>
+	</td></tr>
+	<tr><td>
+	  <strong>Applicant debt present balance:</strong></td><td><%=h @loanapp.applicant_mortgage_present_balance %>
+	</td></tr>
+	<tr><td>
+	  <strong>Applicant mortgage monthly payment:</strong></td><td><%=h @loanapp.applicant_mortgage_monthly_payment %>
+	</td></tr>
+	<% end %>
+	<% if @loanapp.account_type == "Joint" %>
+		<tr><td colspan="2" align="center">
+			<strong>JOINT APPLICANT DETAILS</strong>
+		</td></tr>
+		<tr><td>
+		  <strong>U.S. Citizen(Joint Applicant)</strong></td><td><%=h @loanapp.joint_applicant_citizenship %>
+		</td></tr>
+		<tr><td>
+		  <strong>Joint Applicant name:</strong></td><td><%=h @loanapp.joint_applicant_name %>
+		</td></tr>
+		<tr><td>
+		  <strong>Joint Applicant Account Number :</strong></td><td><%=h @loanapp.joint_applicant_account_number %>
+		</td></tr>
+		<% if !@loanapp.joint_applicant_mother_maiden_name.blank? %>
+		<tr><td>
+		  <strong>Joint Applicant Mother's maiden name::</strong></td><td><%=h @loanapp.joint_applicant_mother_maiden_name %>
+		</td></tr>
+		<% end %>
+		<tr><td>
+		  <strong>Joint Applicant marital status:</strong></td><td><%=h @loanapp.joint_applicant_marital_status %>
+		</td></tr>
+		<tr><td>
+		  <strong>Joint Applicant License Number:</strong></td><td><%=h @loanapp.joint_applicant_license_number %>
+		</td></tr>
+		<tr><td>
+		  <strong>State where license was taken:</strong></td><td><%=h @loanapp.joint_applicant_license_state %>
+		</td></tr>
+		<tr><td>
+		  <strong>Joint Applicant birth date:</strong></td><td><%=h @loanapp.joint_applicant_birth_date %>
+		</td></tr>
+		<% if !@loanapp.joint_applicant_dependents_ages.blank? %>
+		<tr><td>
+		  <strong>Ages of dependents:</strong></td><td><%=h @loanapp.joint_applicant_dependents_ages %>
+		</td></tr>
+		<% end %>
+		<tr><td>
+		  <strong>Joint Applicant Home Phone:</strong></td><td><%=h @loanapp.joint_applicant_home_phone %>
+		</td></tr>
+		<% if !@loanapp.joint_applicant_work_phone.blank? %>
+		<tr><td>
+		  <strong>Joint Applicant Work Phone:</strong></td><td><%=h @loanapp.joint_applicant_work_phone %>
+		</td></tr>
+		<% end %>
+		<tr><td>
+		  <strong>Joint Applicant email address:</strong></td><td><%=h @loanapp.joint_applicant_email_address %>
+		</td></tr>
+		<tr><td>
+		  <strong>Joint Applicant Address:</strong></td><td><%=h @loanapp.joint_applicant_address %> <%=h @loanapp.joint_applicant_city %> <%=h @loanapp.joint_applicant_state %> <%=h @loanapp.joint_applicant_zip %>
+		</td></tr>
+		<tr><td>
+		  <strong>Years in present address:</strong></td><td><%=h @loanapp.years_in_present_address_for_joint %>
+		</td></tr>
+		<tr><td>
+		  <strong>Ownership of present address:</strong></td><td><%=h @loanapp.ownership_of_present_address_for_joint %>
+		</td></tr>
+		<% if !@loanapp.joint_applicant_previous_address.blank? %>
+			<tr><td>
+			  <strong>Joint Applicant previous address:</strong></td><td><%=h @loanapp.joint_applicant_previous_address %> <%=h @loanapp.joint_applicant_previous_city %> <%=h @loanapp.joint_applicant_previous_state %> <%=h @loanapp.joint_applicant_previous_zip %>
+			</td></tr>
+			<tr><td>
+			  <strong>Years in previous address:</strong></td><td><%=h @loanapp.years_in_previous_address_for_joint %>
+			</td></tr>
+			<tr><td>
+			  <strong>Ownership of previous address:</strong></td><td><%=h @loanapp.ownership_of_previous_address_for_joint %>
+			</td></tr>
+		<% end %>
+		<tr><td>
+		  <strong>Employer of Joint Applicant :</strong></td><td><%=h @loanapp.joint_applicant_employer %>
+		</td></tr>
+		<% if !@loanapp.joint_applicant_employer_address.blank? %>
+			<tr><td>
+			  <strong>Joint Applicant employer address:</strong></td><td><%=h @loanapp.joint_applicant_employer_address %> <%=h @loanapp.joint_applicant_employer_city %> <%=h @loanapp.joint_applicant_employer_state %> <%=h @loanapp.joint_applicant_employer_zip %>
+			</td></tr>
+		<% end %>
+		<% if !@loanapp.joint_applicant_employer_supervisor.blank? %>
+		<tr><td>
+		  <strong>Joint Applicant employer supervisor:</strong></td><td><%=h @loanapp.joint_applicant_employer_supervisor %>
+		</td></tr>
+		<% end %>
+		<% if !@loanapp.joint_applicant_current_title.blank? %>
+		<tr><td>
+		  <strong>Joint Applicant current title:</strong></td><td><%=h @loanapp.joint_applicant_current_title %>
+		</td></tr>
+		<% end %>
+		<% if !@loanapp.joint_applicant_employment_start_date.blank? %>
+		<tr><td>
+		  <strong>Joint Applicant employment start date:</strong></td><td><%=h @loanapp.joint_applicant_employment_start_date %>
+		</td></tr>
+		<% end %>
+		<% if !@loanapp.hours_at_work_for_joint.blank? %>
+		<tr><td>
+		  <strong>Number of Hours at work:</strong></td><td><%=h @loanapp.hours_at_work_for_joint %>
+		</td></tr>
+		<% end %>
+		<% if !@loanapp.type_of_business_for_joint.blank? %>
+		<tr><td>
+		  <strong>If self employed, Type of business:</strong></td><td><%=h @loanapp.type_of_business_for_joint %>
+		</td></tr>
+		<% end %>
+		<tr><td>
+		  <strong>Joint Applicant income:</strong></td><td><%=h @loanapp.joint_applicant_income %> <%=h @loanapp.joint_applicant_income_type %> <%=h @loanapp.joint_applicant_income_frequency %>
+		</td></tr>
+		<% if !@loanapp.joint_applicant_other_income_source.blank? %>
+		<tr><td>
+		  <strong>Joint Applicant Other Income Source:</strong></td><td><%=h @loanapp.joint_applicant_other_income_source %>
+		</td></tr>
+		<tr><td>
+		  <strong>Joint Applicant Other Income Amount:</strong></td><td><%=h @loanapp.joint_applicant_other_income %> <%=h @loanapp.joint_applicant_other_income_frequency %>
+		</td></tr>
+		<% end %>
+		<% if !@loanapp.joint_applicant_military_duty.blank? %>
+		<tr><td>
+		  <strong>Joint Applicant expecting military duty the next year:</strong></td><td><%=h @loanapp.joint_applicant_military_duty %>
+		</td></tr>
+		<% end %>
+		<% if !@loanapp.joint_applicant_previous_employer.blank? %>
+			<tr><td>
+			  <strong>Joint Applicant previous employer:</strong></td><td><%=h @loanapp.joint_applicant_previous_employer %>
+			</td></tr>
+			<% if !@loanapp.joint_applicant_previous_employer_address.blank? %>
+				<tr><td>
+				  <strong>Joint Applicant previous employer address:</strong></td><td><%=h @loanapp.joint_applicant_previous_employer_address %> <%=h @loanapp.joint_applicant_previous_employer_city %> <%=h @loanapp.joint_applicant_previous_employer_state %> <%=h @loanapp.joint_applicant_previous_employer_zip %>
+				</td></tr>
+			<% end %>
+			<tr><td>
+			  <strong>Joint Applicant previous employment startdate:</strong></td><td><%=h @loanapp.joint_applicant_previous_employment_startdate %>
+			</td></tr>
+			<tr><td>
+			  <strong>Joint Applicant Previous Employment End Date:</strong></td><td><%=h @loanapp.joint_applicant_previous_employment_enddate %>
+			</td></tr>
+		<% end %>
+		<% if !@loanapp.joint_applicant_reference_name.blank? %>
+			<tr><td>
+			  <strong>Joint Applicant reference name:</strong></td><td><%=h @loanapp.joint_applicant_reference_name %>
+			</td></tr>
+			<tr><td>
+			  <strong>Joint Applicant reference relationship:</strong></td><td><%=h @loanapp.joint_applicant_reference_relationship %>
+			</td></tr>
+			<% if !@loanapp.joint_applicant_reference_address.blank? %>
+				<tr><td>
+				  <strong>Joint Applicant reference address:</strong></td><td><%=h @loanapp.joint_applicant_reference_address %> <%=h @loanapp.joint_applicant_reference_city %> <%=h @loanapp.joint_applicant_reference_state %> <%=h @loanapp.joint_applicant_reference_zip %>
+				</td></tr>
+			<% end %>
+			<tr><td>
+			  <strong>Joint Applicant reference home phone:</strong></td><td><%=h @loanapp.joint_applicant_reference_home_phone %>
+			</td></tr>
+		<% end %>
+		<% if !@loanapp.joint_applicant_mortgage_rent.blank? %>
+			<tr><td>
+			  <strong>Joint Applicant Mortgage/Rent:</strong></td><td><%=h @loanapp.joint_applicant_mortgage_rent %>
+			</td></tr>
+			<tr><td>
+			  <strong>Joint Applicant creditor:</strong></td><td><%=h @loanapp.joint_applicant_creditor %>
+			</td></tr>
+			<tr><td>
+			  <strong>Joint Applicant debt interest rate:</strong></td><td><%=h @loanapp.joint_applicant_debt_interest_rate %>
+			</td></tr>
+			<tr><td>
+			  <strong>Joint Applicant debt present balance:</strong></td><td><%=h @loanapp.joint_applicant_mortgage_present_balance %>
+			</td></tr>
+			<tr><td>
+			  <strong>Joint Applicant mortgage monthly payment:</strong></td><td><%=h @loanapp.joint_applicant_mortgage_monthly_payment %>
+			</td></tr>
+		<% end %>
+	<% end %>
+</table>
+</div>
+
+
+

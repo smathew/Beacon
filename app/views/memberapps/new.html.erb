@@ -1,0 +1,231 @@
+<div class="innercontent clearfix">      
+<div class="margin clearfix">
+<% form_for(@memberapp) do |f| %>
+	<%= f.error_messages %>
+<table class="app">
+			<tr>
+			  <td align="center" colspan="4"><h1 class="centertext"><strong>MEMBERSHIP APPLICATION</strong></h1></td>
+			  </tr>
+			<tr>
+			      <td align="center" colspan="4">
+			        <p class="centertext">
+			BEACON CREDIT UNION<br />
+			7910 NATIONAL TURNPIKE<br />
+			LOUISVILLE, KENTUCKY 40214</p>
+                      <p class="centertext" style="color:#009933">
+			&nbsp;* Required fields</p></td>
+			  </tr>
+			    <tr>
+			      <td class="textcolor" colspan="2">*Name:</td>
+			      <td colspan="2"> <%= f.text_field :name %></td></tr>
+				<tr>  
+                  <td class="textcolor" colspan="2">*Soc. Sec. No.:</td>
+			      <td colspan="2"><%= f.text_field :ssn, :maxlength => 11 %>
+			      (### - ## - ####)</td>
+			    </tr>
+				<tr>
+				  <td colspan="2">Select One:</td>
+				  <td colspan="2"><p class="main">
+					<%= f.radio_button("salutation", "Mr.") %>Mr.
+					<%= f.radio_button("salutation", "Mrs.") %>Mrs.
+					<%= f.radio_button("salutation", "Ms.") %>Ms.
+					<%= f.radio_button("salutation", "Miss.") %>Miss
+				</p></td>
+			    </tr>
+				<tr>
+			      <td colspan="2">Joint Name:</td>
+			      <td align="left" colspan="2"><%= f.text_field :joint_name %></td>
+			    </tr>
+			    <tr>
+			      <td class="textcolor" colspan="2">*Mailing Address:</td>
+			      <td align="left" colspan="2"><%= f.text_field :address %></td>
+			    </tr>
+			    <tr>
+			      <td colspan="2" class="textcolor"><p style="color: #009933">*City:</p></td>
+			      <td colspan="2"><%= f.text_field :city %></td></tr>
+				  <tr><td colspan="2" class="textcolor"><p style="color: #009933">*State:</p></td>
+			      <td colspan="2"><%= f.select( :state,
+						{ "Alabama" => "AL", 
+						  "Alaska" => "AK", 
+						  "Arizona" => "AZ", 
+						  "Arkansas" => "AR", 
+						  "California" => "CA", 
+						  "Colorado" => "CO",
+						  "Connecticut" => "CT", 
+						  "Delaware" => "DE", 
+						  "District Of Columbia" => "DC", 
+						  "Florida" => "FL", 
+						  "Georgia" => "GA", 
+						  "Hawaii" => "HI",
+						  "Idaho" => "ID", 
+						  "Illinois" => "IL", 
+						  "Indiana" => "IN", 
+						  "Iowa" => "IO", 
+						  "Kansas" => "KS", 
+						  "Kentucky" => "KY",
+						  "Louisiana" => "LA", 
+						  "Maine" => "ME", 
+						  "Maryland" => "MD", 
+						  "Massachusetts" => "MA", 
+						  "Michigan" => "MI", 
+						  "Minnesota" => "MN",
+						  "Mississippi" => "MS", 
+						  "Missouri" => "MO", 
+						  "Montana" => "MT", 
+						  "Nebraska" => "NE", 
+						  "Nevada" => "NV", 
+						  "New Hampshire" => "NH",
+						  "New Jersey" => "NJ", 
+						  "New Mexico" => "NM", 
+						  "New York" => "NY", 
+						  "North Carolina" => "NC", 
+						  "North Dakota" => "ND", 
+						  "Ohio" => "OH",
+						  "Oklahoma" => "OK", 
+						  "Oregon" => "OR", 
+						  "Pennsylvania" => "PA", 
+						  "Rhode Island" => "RI", 
+						  "South Carolina" => "SC", 
+						  "South Dakota" => "SD",
+						  "Tennessee" => "TN", 
+						  "Texas" => "TX", 
+						  "Utah" => "UT", 
+						  "Vermont" => "VT", 
+						  "Virginia" => "VA", 
+						  "Washington" => "WA",
+						  "West Virginia" => "WV",
+						  "Wisconsin" => "WI",
+						  "Wyoming" => "WY"
+						 }) %> </td></tr>
+			     <tr> <td colspan="2" class="textcolor"><p style="color: #009933">*Zip:</p></td>
+			      <td colspan="2"><%= f.text_field :zip, :maxlength => 5 %></td>
+			    </tr>
+			    <tr>
+			      <td colspan="2" class="textcolor"><p style="color: #009933">*Home Phone:</p></td>
+			      <td colspan="2"><%= f.text_field :home_phone, :maxlength => 12 %>
+		          (###-###-####)</td></tr>
+			    <tr>  
+                  <td colspan="2"><p class="main">Business Phone:</p></td>
+			      <td  colspan="2"><%= f.text_field :work_phone, :maxlength => 12 %>
+(###-###-####)</td>
+			    </tr>
+				<tr>
+			      <td class="textcolor" colspan="2"><p style="color: #009933">*Birth Date:</p></td>
+			      <td colspan="2"><%= f.text_field :birth_date, :maxlength => 10 %> (MM-DD-YYYY)</td></tr>
+			    <tr>  
+                  <td colspan="2"><p class="main">Membership Eligibility:</p></td>
+			      <td colspan="2"><p class="main">
+					<%= f.radio_button("member_eligibility", "Company") %> Company
+					<%= f.radio_button("member_eligibility", "Family") %> Family</p></td>
+			    </tr>
+				<tr>
+			      <td colspan="2"><p class="main">Badge No.:</p></td>
+			      <td colspan="2"><%= f.text_field :badge_no %></td></tr>
+			    <tr>  
+                  <td colspan="2"><p class="main">Hire Date:</p></td>
+			      <td colspan="2"><%= f.text_field :hire_date %> (MM-DD-YYYY)</td>
+			    </tr>
+				<tr>
+			      <td colspan="2"><p class="main">E-Mail Address:</p></td>
+			      <td align="left" colspan="2"><%= f.text_field :email_address %></td>
+			    </tr>
+				<tr>
+			      <td colspan="2"><p class="main">Best time to call:</p></td>
+			      <td align="left" colspan="2"><%= f.text_field :time2call %></td></tr>
+				<tr>
+				  <td  colspan="2"><p class="main">Are you a Citizen?</p></td>
+			      <td align="left"  colspan="2"><p class="main">
+					<%= f.radio_button("citizen", "Yes, I'm a citizen") %>Yes
+					<%= f.radio_button("citizen", "No, I'm not a citizen") %>No
+		          </p></td>
+			    </tr>
+				<tr><td colspan="4" class="textcolor"><i>*Please Check the accounts you wish to open:</i></td></tr>
+				<tr>
+					<td align="left" colspan="2"><p class="main">
+						<%= f.radio_button("account", "prime") %> Prime Savings</p> </td>
+			        <td align="left" colspan="2"><p class="main">
+						<%= f.radio_button("account", "other") %> Other Savings</p></td>
+				</tr>
+				<tr>
+					<td align="left" colspan="4"><p class="main">
+						<%=check_box("memberapp", "overdraft_protection", {}, "yes", "no")%> Share Draft with the following overdraft protection:</p></td>
+				</tr>
+				<tr>
+					<td colspan="4">
+						<%= f.radio_button("typeof_protection", "No Overdraft Privilege Requested") %> No Overdraft Privilege Requested<br />
+						<%= f.radio_button("typeof_protection", "Overdraft to Share Account") %> Overdraft to Share Account<br />
+						<%= f.radio_button("typeof_protection", "Overdraft to Loan, then Shares") %> Overdraft to Loan, then Shares<br />
+					<%= f.radio_button("typeof_protection", "Overdraft to Loan") %> Overdraft to Loan<br />
+					<%= f.radio_button("typeof_protection", "Overdraft to Shares, then Loan") %> Overdraft to Shares, then Loan</td>
+				</tr>
+				<tr>
+					<td  colspan="2">Do you wish to have any of the following : </td>
+                    <td  colspan="2"><p class="main">
+						<%=check_box("memberapp", "atm_card", {}, "yes", "no")%> ATM Card<br /> 
+						<%=check_box("memberapp", "mmdebit_card", {}, "yes", "no")%> MasterMoney™ Debit Card</p></td>
+				</tr>
+				<tr>
+					<td align="left"  colspan="4"><p class="main">
+						<%= f.radio_button("audio_response", "audio") %>Audio Response and PIN Number</p></td>
+				</tr>
+			  </table>
+			  
+              <table class="signature">
+			          <tr>
+			            <td colspan="2" class="red">
+						<p class="subtitle">SIGNATURES:<br /></p>
+						<hr />
+			
+			                  <p></p>
+						
+						<p class="main"><i>By submitting thi application online, I hereby make application for membership in and agree to conform to the Bylaws, as amended, of Beacon Credit Union (the "Credit Union").  I certify that: I am within the field of membership of this Credit Union; and the information provided on this application is true and correct.  I also agree to be bound to the terms and conditions of any account that I have in the Credit Union now or in the future as set forth in the Membership Agreement.</i></p>
+			
+			<p class="main"><i>I authorize the Credit 
+			                  Union to verify any information provided hereon, to check my 
+			                  financial history, to obtain consumer reports on me, and to 
+			                  answer questions about my experiences with the Credit Union. I 
+			                  understand that it is a federal crime to willfully and 
+			                  deliberately provide incomplete or incorrect information to a 
+			                  State Chartered Credit Union insured by National Credit Union 
+			                  Administration. I understand once my membership is approved, I 
+			                  must complete, sign, and follow instructions to finalize my 
+			                  membership or my membership will not be opened and I will not 
+			                  be extended any services.</i></p></td>
+			          </tr>
+			<tr>
+				<td><p class="main"><br />________________________________________<br />
+				<i>Applicant</i></p></td>
+				<td><p class="main"><br />___/____/______<br />
+				<i>Date</i></p></td>
+			</tr>
+			<tr>
+				<td><p class="main"><br />________________________________________<br />
+				<i>Applicant</i></p></td>
+				<td><p class="main"><br />___/____/_______<br />
+				<i>Date</i></p></td>
+			</tr>
+				</table>
+					
+			<p class="main"><span class="style2"><strong>Be sure to print out form prior to submit and fax or mail it to us.</strong></span><br />
+			(Please click anywhere in the white field before you send this page to the printer.)</p>
+			
+			<p class="centertext">Please call 
+			            the&nbsp;Member Service&nbsp;Department at (502) 366-6022 or 1-800-363-6022 on the following business day for status of your application.</p>
+  			<p class="centertext"><%= f.submit 'Submit Application' %></p>
+<% end %>
+	<!-- ends -->
+			
+			<hr class="centertext" />		
+		<table>
+			<tr>
+				<td><%= image_tag "helm.gif", :height => 20, :alt => "", :width => 20 %></td>
+				<td valign="top" align="left"><p class="main"><%= link_to "Request More Information", new_rfi_path %></p></td>
+				<td><%= image_tag "helm.gif", :height => 20, :alt => "", :width => 20 %></td>
+				<td valign="top" align="left"><p class="main"><%= link_to "See Current Savings Rates", rates_path %></p></td>
+			</tr>
+			<tr>
+				<td><%= image_tag "helm.gif", :height => 20, :alt => "", :width => 20 %></td>
+				<td valign="top" align="left"><p class="main"><%= link_to "See Rate and Fee Disclosure", disclosure_truth_path %></p></td>
+			</tr>
+		</table>
+</div>
